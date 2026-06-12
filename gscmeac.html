@@ -1,383 +1,386 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SCM / e-Accounting 유지보수 | 윤성호 Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCM / e-Accounting 유지보수 | 윤성호 Portfolio</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
-<link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
 
-<div class="project-page">
+    <div class="project-page">
 
-    <a href="index.html" class="detail-btn">
-        ← Portfolio로 돌아가기
-    </a>
+        <a href="index.html" class="detail-btn">
+            ← Portfolio로 돌아가기
+        </a>
 
-    <div class="project-header">
+        <div class="project-header">
 
-        <h1>SCM / e-Accounting 시스템 유지보수</h1>
+            <h1>SCM / e-Accounting 시스템 유지보수</h1>
 
-        <p>
-            2024.01 ~ 현재
-        </p>
+            <p>
+                2024.01 ~ 현재
+            </p>
+
+        </div>
+
+        <div class="project-section">
+
+            <h2>프로젝트 개요</h2>
+
+            <p>
+                Kolmar BNH의 공급망 관리 시스템(SCM)과 전자 회계 시스템(e-Accounting)
+                유지보수 프로젝트입니다.
+            </p>
+
+            <p>
+                SCM은 발주접수·납품예정 등록·납품현황 조회·입고실적 마감까지
+                구매·납품 업무 전 과정을 지원하는 시스템으로,
+                운영 중 발생하는 오류 수정 및 기능 개선 업무를 담당하였습니다.
+            </p>
+
+            <p>
+                e-Accounting은 법인카드·세금계산서·일반전표·개인경비 등
+                다양한 전표 유형의 생성·상신·결재·승인 워크플로우를 처리하는 전자 회계 시스템으로,
+                부서 결재부터 회계팀 최종 승인까지 이어지는 전표 프로세스를 안정적으로 운영하였습니다.
+            </p>
+
+        </div>
+
+        <div class="project-section">
+
+            <h2>기술 스택</h2>
+
+            <div class="tech-stack">
+
+                <span>Java</span>
+                <span>JavaScript</span>
+                <span>Spring Framework</span>
+                <span>Oracle</span>
+                <span>MyBatis</span>
+                <span>REST API</span>
+                <span>GitLab</span>
+
+            </div>
+
+        </div>
+
+        <div class="project-section">
+
+            <h2>담당 업무</h2>
+
+            <div class="feature-block">
+                <ul>
+
+                    <li>발주접수관리·발주진행현황·발주진행현황(전체) 화면 오류 수정 및 기능 개선</li>
+
+                    <li>납품예정등록·납품예정전송(고객사) 기능 유지보수</li>
+
+                    <li>납품현황·납품현황(전체)·발주서별 납품현황·납품별 발주서현황 조회 화면 개선</li>
+
+                    <li>납품현황(마감기준)·납품현황(단가포함 거래명)·납품현황(시간대별)·납품현황차트(시간대별) 유지보수</li>
+
+                    <li>구매_잔여량관리 잔여수량 산출 로직 오류 수정</li>
+
+                    <li>제품 입고 현황·마감 현황 화면 유지보수</li>
+
+                    <li>법인카드·개인형 법인카드·세금계산서·일반전표·개인경비 전표 생성 기능 유지보수</li>
+
+                    <li>전표 일괄상신·전표그룹 상신·후속증빙(세금계산서·일반전표) 처리 기능 개선</li>
+
+                    <li>부서 전표결재·전표그룹 결재 워크플로우 유지보수</li>
+
+                    <li>회계담당 전표승인·회계팀장 전표승인·전표그룹 승인 처리 기능 오류 수정</li>
+
+                    <li>전표현황(법인카드·개인형 법인카드·세금계산서·일반전표·개인경비) 조회 및 엑셀 다운로드 유지보수</li>
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="project-section">
+
+            <h2>주요 기능</h2>
+
+            <div class="feature-block">
+                <h3>발주정보 관리 (SCM)</h3>
+
+                <p>
+                    업체·품목·발주일자 조건으로 발주서를 접수하고 진행 현황을 관리하는 기능을 유지보수하였습니다.
+                </p>
+
+                <ul>
+                    <li>발주접수관리 화면의 미접수건 필터 및 발주알림 기능 오류 수정</li>
+                    <li>발주진행현황 조회 조건 및 상태 표시 오류 수정</li>
+                    <li>발주진행현황(전체) 화면의 전체 조회 범위 처리 로직 개선</li>
+                </ul>
+            </div>
+
+            <div class="feature-block">
+                <h3>납품관리 (SCM)</h3>
+
+                <p>
+                    발주 건에 대한 납품예정 등록부터 납품현황 조회까지
+                    납품 업무 전반을 유지보수하였습니다.
+                </p>
+
+                <ul>
+                    <li>납품예정등록 화면의 임시저장 및 고객사 전송 처리 기능 유지보수</li>
+                    <li>납품예정전송(고객사) 전송 상태 처리 로직 오류 수정</li>
+                    <li>납품현황·납품현황(전체) 조회 조건 및 집계 오류 수정</li>
+                    <li>발주서별 납품현황·납품별 발주서현황 연계 조회 기능 개선</li>
+                    <li>납품현황(마감기준) 마감 집계 로직 오류 수정</li>
+                    <li>납품현황(단가포함 거래명) 단가 연계 표시 오류 수정</li>
+                    <li>납품현황(시간대별)·납품현황차트(시간대별) 시간대 집계 및 차트 렌더링 오류 수정</li>
+                    <li>구매_잔여량관리 잔여수량 산출 쿼리 로직 오류 수정</li>
+                </ul>
+            </div>
+
+            <div class="feature-block">
+                <h3>입고실적 관리 (SCM)</h3>
+
+                <p>
+                    발주 건에 대한 제품 입고 실적과 마감 현황을 조회하는 기능을 유지보수하였습니다.
+                </p>
+
+                <ul>
+                    <li>제품 입고 현황 조회 조건 및 목록 표시 오류 수정</li>
+                    <li>마감 현황 화면의 마감 처리 로직 및 집계 오류 수정</li>
+                </ul>
+            </div>
+
+            <div class="feature-block">
+                <h3>전표 생성 · 상신 (e-Accounting)</h3>
+
+                <p>
+                    법인카드·개인형 법인카드·세금계산서·일반전표·개인경비
+                    5가지 전표 유형의 생성 및 상신 기능을 유지보수하였습니다.
+                </p>
+
+                <ul>
+                    <li>법인카드·개인형 법인카드 전표 생성 화면 오류 수정</li>
+                    <li>세금계산서·일반전표·개인경비 전표 생성 기능 유지보수</li>
+                    <li>전표 일괄상신(법인카드·개인형 법인카드·세금계산서·개인경비) 처리 기능 개선</li>
+                    <li>전표그룹 상신 처리 로직 오류 수정</li>
+                    <li>후속증빙(세금계산서·일반전표) 연계 처리 기능 유지보수</li>
+                </ul>
+            </div>
+
+            <div class="feature-block">
+                <h3>전표 결재 · 승인 (e-Accounting)</h3>
+
+                <p>
+                    부서 전표결재 → 회계담당 전표승인 → 회계팀장 전표승인으로 이어지는
+                    다단계 전표 결재 워크플로우를 유지보수하였습니다.
+                </p>
+
+                <ul>
+                    <li>부서 전표결재(법인카드·개인형 법인카드·세금계산서·일반전표·개인경비) 화면 오류 수정</li>
+                    <li>전표그룹 결재 처리 로직 유지보수</li>
+                    <li>회계담당 전표승인 화면의 결재 상태 전환 로직 오류 수정</li>
+                    <li>회계팀장 전표승인 및 전표그룹-회계팀장승인 처리 기능 유지보수</li>
+                    <li>회계팀 일괄상신·일괄승인·일괄반려 기능 오류 수정</li>
+                    <li>전표현황(법인카드·개인형 법인카드·세금계산서·일반전표·개인경비) 조회 및 엑셀 다운로드 유지보수</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="project-section">
+
+            <h2>트러블 슈팅</h2>
+
+            <div class="feature-block">
+                <h3>납품현황 집계 데이터 불일치 문제 해결</h3>
+
+                <p>
+                    납품현황(마감기준) 화면에서 기납품량(미전송·전송) 집계 수치가
+                    납품예정등록 화면의 수량과 일치하지 않는 문제가 발생하였습니다.
+                </p>
+
+                <div class="sub-block">
+                    <h4>문제 상황</h4>
+                    <ul>
+                        <li>납품현황 집계 수치와 납품예정등록 수량 간 불일치 발생</li>
+                        <li>특정 발주번호 조건에서 미전송·전송 건수가 중복 집계되는 오류 발생</li>
+                    </ul>
+                </div>
+
+                <div class="sub-block">
+                    <h4>원인 분석</h4>
+                    <ul>
+                        <li>GROUP BY 집계 쿼리에서 전송 상태 분기 조건 누락 확인</li>
+                        <li>납품예정전송 처리 시 상태값 업데이트 로직 누락으로 인한 집계 오류 확인</li>
+                    </ul>
+                </div>
+
+                <div class="sub-block">
+                    <h4>개선 작업</h4>
+                    <ul>
+                        <li>집계 쿼리 전송 상태 분기 조건 추가 및 NVL 처리로 NULL 집계 보정</li>
+                        <li>납품예정전송 처리 후 상태값 업데이트 로직 보완</li>
+                        <li>단위 테스트 케이스 추가로 미전송·전송 집계 정확성 검증</li>
+                    </ul>
+                </div>
+
+                <div class="sub-block">
+                    <h4>결과</h4>
+                    <ul>
+                        <li>납품현황 집계 정확도 확보 및 납품 업무 신뢰성 향상</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-block">
+                <h3>전표 결재 워크플로우 상태 오류 해결</h3>
+
+                <p>
+                    부서 전표결재 완료 후 회계담당 전표승인 화면에서 해당 전표가
+                    조회되지 않거나 결재상태가 갱신되지 않는 문제가 발생하였습니다.
+                </p>
+
+                <div class="sub-block">
+                    <h4>문제 상황</h4>
+                    <ul>
+                        <li>부서 결재 완료 후 회계담당 승인 화면에서 전표 미표시</li>
+                        <li>일괄상신 처리 시 일부 전표의 결재상태가 갱신되지 않는 간헐적 오류</li>
+                    </ul>
+                </div>
+
+                <div class="sub-block">
+                    <h4>원인 분석</h4>
+                    <ul>
+                        <li>결재 단계별 상태 전환 로직에서 특정 전표 유형 처리 누락 확인</li>
+                        <li>일괄상신 트랜잭션 처리 중 예외 발생 시 롤백 미처리 확인</li>
+                    </ul>
+                </div>
+
+                <div class="sub-block">
+                    <h4>개선 작업</h4>
+                    <ul>
+                        <li>결재 단계 상태 전환 로직에 누락된 전표 유형 케이스 추가</li>
+                        <li>일괄상신 트랜잭션 예외 처리 보완 및 롤백 로직 적용</li>
+                        <li>결재 단계별 상태값 검증 테스트 케이스 추가</li>
+                    </ul>
+                </div>
+
+                <div class="sub-block">
+                    <h4>결과</h4>
+                    <ul>
+                        <li>전표 결재·승인 워크플로우 안정성 확보</li>
+                        <li>회계 업무 처리 신뢰성 향상</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="project-section">
+
+            <h2>프로젝트 성과</h2>
+
+            <div class="feature-block">
+                <ul>
+
+                    <li>
+                        발주접수·납품예정·납품현황·입고실적을 아우르는
+                        SCM 구매·납품 업무 전반의 안정적 운영 지원
+                    </li>
+
+                    <li>
+                        납품현황(마감기준·단가포함·시간대별·차트) 등 다양한 집계 유형의
+                        쿼리 로직 정합성 확보
+                    </li>
+
+                    <li>
+                        법인카드·세금계산서·일반전표·개인경비 등 5가지 전표 유형의
+                        생성·상신·결재·승인 워크플로우 안정화
+                    </li>
+
+                    <li>
+                        부서 결재 → 회계담당 승인 → 회계팀장 승인으로 이어지는
+                        다단계 전표 결재 프로세스 오류 해결 및 안정성 향상
+                    </li>
+
+                    <li>
+                        기존 운영 시스템 코드 분석 및 오류 수정을 통한
+                        레거시 시스템 유지보수 역량 습득
+                    </li>
+
+                    <li>
+                        SCM(구매·납품) 및 e-Accounting(전표·결재·승인) 도메인 지식 습득
+                    </li>
+
+                    <li>
+                        운영 중인 실서비스 장애 대응 및 긴급 패치 경험 확보
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
 
     </div>
 
-    <div class="project-section">
-
-        <h2>프로젝트 개요</h2>
-
-        <p>
-            Kolmar BNH의 공급망 관리 시스템(SCM)과 전자 회계 시스템(e-Accounting)
-            유지보수 프로젝트입니다.
-        </p>
-
-        <p>
-            SCM은 발주접수·납품예정 등록·납품현황 조회·입고실적 마감까지
-            구매·납품 업무 전 과정을 지원하는 시스템으로,
-            운영 중 발생하는 오류 수정 및 기능 개선 업무를 담당하였습니다.
-        </p>
-
-        <p>
-            e-Accounting은 법인카드·세금계산서·일반전표·개인경비 등
-            다양한 전표 유형의 생성·상신·결재·승인 워크플로우를 처리하는 전자 회계 시스템으로,
-            부서 결재부터 회계팀 최종 승인까지 이어지는 전표 프로세스를 안정적으로 운영하였습니다.
-        </p>
-
-    </div>
-
-    <div class="project-section">
-
-        <h2>기술 스택</h2>
-
-        <div class="tech-stack">
-
-            <span>Java</span>
-            <span>JavaScript</span>
-            <span>Spring Framework</span>
-            <span>Oracle</span>
-            <span>MyBatis</span>
-            <span>REST API</span>
-            <span>GitLab</span>
-
-        </div>
-
-    </div>
-
-    <div class="project-section">
-
-        <h2>담당 업무</h2>
-
-        <div class="feature-block">
-            <ul>
-
-                <li>발주접수관리·발주진행현황·발주진행현황(전체) 화면 오류 수정 및 기능 개선</li>
-
-                <li>납품예정등록·납품예정전송(고객사) 기능 유지보수</li>
-
-                <li>납품현황·납품현황(전체)·발주서별 납품현황·납품별 발주서현황 조회 화면 개선</li>
-
-                <li>납품현황(마감기준)·납품현황(단가포함 거래명)·납품현황(시간대별)·납품현황차트(시간대별) 유지보수</li>
-
-                <li>구매_잔여량관리 잔여수량 산출 로직 오류 수정</li>
-
-                <li>제품 입고 현황·마감 현황 화면 유지보수</li>
-
-                <li>법인카드·개인형 법인카드·세금계산서·일반전표·개인경비 전표 생성 기능 유지보수</li>
-
-                <li>전표 일괄상신·전표그룹 상신·후속증빙(세금계산서·일반전표) 처리 기능 개선</li>
-
-                <li>부서 전표결재·전표그룹 결재 워크플로우 유지보수</li>
-
-                <li>회계담당 전표승인·회계팀장 전표승인·전표그룹 승인 처리 기능 오류 수정</li>
-
-                <li>전표현황(법인카드·개인형 법인카드·세금계산서·일반전표·개인경비) 조회 및 엑셀 다운로드 유지보수</li>
-
-            </ul>
-        </div>
-
-    </div>
-
-    <div class="project-section">
-
-        <h2>주요 기능</h2>
-
-        <div class="feature-block">
-            <h3>발주정보 관리 (SCM)</h3>
-
-            <p>
-                업체·품목·발주일자 조건으로 발주서를 접수하고 진행 현황을 관리하는 기능을 유지보수하였습니다.
-            </p>
-
-            <ul>
-                <li>발주접수관리 화면의 미접수건 필터 및 발주알림 기능 오류 수정</li>
-                <li>발주진행현황 조회 조건 및 상태 표시 오류 수정</li>
-                <li>발주진행현황(전체) 화면의 전체 조회 범위 처리 로직 개선</li>
-            </ul>
-        </div>
-
-        <div class="feature-block">
-            <h3>납품관리 (SCM)</h3>
-
-            <p>
-                발주 건에 대한 납품예정 등록부터 납품현황 조회까지
-                납품 업무 전반을 유지보수하였습니다.
-            </p>
-
-            <ul>
-                <li>납품예정등록 화면의 임시저장 및 고객사 전송 처리 기능 유지보수</li>
-                <li>납품예정전송(고객사) 전송 상태 처리 로직 오류 수정</li>
-                <li>납품현황·납품현황(전체) 조회 조건 및 집계 오류 수정</li>
-                <li>발주서별 납품현황·납품별 발주서현황 연계 조회 기능 개선</li>
-                <li>납품현황(마감기준) 마감 집계 로직 오류 수정</li>
-                <li>납품현황(단가포함 거래명) 단가 연계 표시 오류 수정</li>
-                <li>납품현황(시간대별)·납품현황차트(시간대별) 시간대 집계 및 차트 렌더링 오류 수정</li>
-                <li>구매_잔여량관리 잔여수량 산출 쿼리 로직 오류 수정</li>
-            </ul>
-        </div>
-
-        <div class="feature-block">
-            <h3>입고실적 관리 (SCM)</h3>
-
-            <p>
-                발주 건에 대한 제품 입고 실적과 마감 현황을 조회하는 기능을 유지보수하였습니다.
-            </p>
-
-            <ul>
-                <li>제품 입고 현황 조회 조건 및 목록 표시 오류 수정</li>
-                <li>마감 현황 화면의 마감 처리 로직 및 집계 오류 수정</li>
-            </ul>
-        </div>
-
-        <div class="feature-block">
-            <h3>전표 생성 · 상신 (e-Accounting)</h3>
-
-            <p>
-                법인카드·개인형 법인카드·세금계산서·일반전표·개인경비
-                5가지 전표 유형의 생성 및 상신 기능을 유지보수하였습니다.
-            </p>
-
-            <ul>
-                <li>법인카드·개인형 법인카드 전표 생성 화면 오류 수정</li>
-                <li>세금계산서·일반전표·개인경비 전표 생성 기능 유지보수</li>
-                <li>전표 일괄상신(법인카드·개인형 법인카드·세금계산서·개인경비) 처리 기능 개선</li>
-                <li>전표그룹 상신 처리 로직 오류 수정</li>
-                <li>후속증빙(세금계산서·일반전표) 연계 처리 기능 유지보수</li>
-            </ul>
-        </div>
-
-        <div class="feature-block">
-            <h3>전표 결재 · 승인 (e-Accounting)</h3>
-
-            <p>
-                부서 전표결재 → 회계담당 전표승인 → 회계팀장 전표승인으로 이어지는
-                다단계 전표 결재 워크플로우를 유지보수하였습니다.
-            </p>
-
-            <ul>
-                <li>부서 전표결재(법인카드·개인형 법인카드·세금계산서·일반전표·개인경비) 화면 오류 수정</li>
-                <li>전표그룹 결재 처리 로직 유지보수</li>
-                <li>회계담당 전표승인 화면의 결재 상태 전환 로직 오류 수정</li>
-                <li>회계팀장 전표승인 및 전표그룹-회계팀장승인 처리 기능 유지보수</li>
-                <li>회계팀 일괄상신·일괄승인·일괄반려 기능 오류 수정</li>
-                <li>전표현황(법인카드·개인형 법인카드·세금계산서·일반전표·개인경비) 조회 및 엑셀 다운로드 유지보수</li>
-            </ul>
-        </div>
-
-    </div>
-
-    <div class="project-section">
-
-        <h2>트러블 슈팅</h2>
-
-        <div class="feature-block">
-            <h3>납품현황 집계 데이터 불일치 문제 해결</h3>
-
-            <p>
-                납품현황(마감기준) 화면에서 기납품량(미전송·전송) 집계 수치가
-                납품예정등록 화면의 수량과 일치하지 않는 문제가 발생하였습니다.
-            </p>
-
-            <div class="sub-block">
-                <h4>문제 상황</h4>
-                <ul>
-                    <li>납품현황 집계 수치와 납품예정등록 수량 간 불일치 발생</li>
-                    <li>특정 발주번호 조건에서 미전송·전송 건수가 중복 집계되는 오류 발생</li>
-                </ul>
-            </div>
-
-            <div class="sub-block">
-                <h4>원인 분석</h4>
-                <ul>
-                    <li>GROUP BY 집계 쿼리에서 전송 상태 분기 조건 누락 확인</li>
-                    <li>납품예정전송 처리 시 상태값 업데이트 로직 누락으로 인한 집계 오류 확인</li>
-                </ul>
-            </div>
-
-            <div class="sub-block">
-                <h4>개선 작업</h4>
-                <ul>
-                    <li>집계 쿼리 전송 상태 분기 조건 추가 및 NVL 처리로 NULL 집계 보정</li>
-                    <li>납품예정전송 처리 후 상태값 업데이트 로직 보완</li>
-                    <li>단위 테스트 케이스 추가로 미전송·전송 집계 정확성 검증</li>
-                </ul>
-            </div>
-
-            <div class="sub-block">
-                <h4>결과</h4>
-                <ul>
-                    <li>납품현황 집계 정확도 확보 및 납품 업무 신뢰성 향상</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="feature-block">
-            <h3>전표 결재 워크플로우 상태 오류 해결</h3>
-
-            <p>
-                부서 전표결재 완료 후 회계담당 전표승인 화면에서 해당 전표가
-                조회되지 않거나 결재상태가 갱신되지 않는 문제가 발생하였습니다.
-            </p>
-
-            <div class="sub-block">
-                <h4>문제 상황</h4>
-                <ul>
-                    <li>부서 결재 완료 후 회계담당 승인 화면에서 전표 미표시</li>
-                    <li>일괄상신 처리 시 일부 전표의 결재상태가 갱신되지 않는 간헐적 오류</li>
-                </ul>
-            </div>
-
-            <div class="sub-block">
-                <h4>원인 분석</h4>
-                <ul>
-                    <li>결재 단계별 상태 전환 로직에서 특정 전표 유형 처리 누락 확인</li>
-                    <li>일괄상신 트랜잭션 처리 중 예외 발생 시 롤백 미처리 확인</li>
-                </ul>
-            </div>
-
-            <div class="sub-block">
-                <h4>개선 작업</h4>
-                <ul>
-                    <li>결재 단계 상태 전환 로직에 누락된 전표 유형 케이스 추가</li>
-                    <li>일괄상신 트랜잭션 예외 처리 보완 및 롤백 로직 적용</li>
-                    <li>결재 단계별 상태값 검증 테스트 케이스 추가</li>
-                </ul>
-            </div>
-
-            <div class="sub-block">
-                <h4>결과</h4>
-                <ul>
-                    <li>전표 결재·승인 워크플로우 안정성 확보</li>
-                    <li>회계 업무 처리 신뢰성 향상</li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="project-section">
-
-        <h2>프로젝트 성과</h2>
-
-        <div class="feature-block">
-            <ul>
-
-                <li>
-                    발주접수·납품예정·납품현황·입고실적을 아우르는
-                    SCM 구매·납품 업무 전반의 안정적 운영 지원
-                </li>
-
-                <li>
-                    납품현황(마감기준·단가포함·시간대별·차트) 등 다양한 집계 유형의
-                    쿼리 로직 정합성 확보
-                </li>
-
-                <li>
-                    법인카드·세금계산서·일반전표·개인경비 등 5가지 전표 유형의
-                    생성·상신·결재·승인 워크플로우 안정화
-                </li>
-
-                <li>
-                    부서 결재 → 회계담당 승인 → 회계팀장 승인으로 이어지는
-                    다단계 전표 결재 프로세스 오류 해결 및 안정성 향상
-                </li>
-
-                <li>
-                    기존 운영 시스템 코드 분석 및 오류 수정을 통한
-                    레거시 시스템 유지보수 역량 습득
-                </li>
-
-                <li>
-                    SCM(구매·납품) 및 e-Accounting(전표·결재·승인) 도메인 지식 습득
-                </li>
-
-                <li>
-                    운영 중인 실서비스 장애 대응 및 긴급 패치 경험 확보
-                </li>
-
-            </ul>
-        </div>
-
-    </div>
-
-</div>
-
-<style>
-/* ── feature-block 공통 ── */
-.feature-block {
-    border-left: 3px solid #4a7fd4;
-    padding: 1.25rem 1.25rem 1.25rem 1.5rem;
-    margin-top: 1.5rem;
-    background: #f8faff;
-    border-radius: 0 8px 8px 0;
-}
-
-.feature-block h3 {
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-}
-
-.feature-block > p {
-    margin-top: 0;
-}
-
-.feature-block > ul:first-child,
-.feature-block > ul {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* ── sub-block : 트러블슈팅 내 h4 단위 구분 ── */
-.sub-block {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid #dde6f5;
-}
-
-.sub-block:first-of-type {
-    margin-top: 0.75rem;
-}
-
-.sub-block h4 {
-    margin: 0 0 0.4rem 0;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #4a7fd4;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-}
-
-.sub-block ul {
-    margin: 0;
-}
-</style>
+    <style>
+        /* ── feature-block 공통 ── */
+        .feature-block {
+            border-left: 3px solid #4a7fd4;
+            padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+            margin-top: 1.5rem;
+            background: #f8faff;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .feature-block h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-block>p {
+            margin-top: 0;
+        }
+
+        .feature-block>ul:first-child,
+        .feature-block>ul {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        /* ── sub-block : 트러블슈팅 내 h4 단위 구분 ── */
+        .sub-block {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #dde6f5;
+        }
+
+        .sub-block:first-of-type {
+            margin-top: 0.75rem;
+        }
+
+        .sub-block h4 {
+            margin: 0 0 0.4rem 0;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #4a7fd4;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+
+        .sub-block ul {
+            margin: 0;
+        }
+    </style>
 
 </body>
+
 </html>
