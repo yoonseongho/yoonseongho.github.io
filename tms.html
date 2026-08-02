@@ -11,7 +11,6 @@
           rel="stylesheet">
 
     <link rel="stylesheet" href="index.css">
-
 </head>
 
 <body>
@@ -23,486 +22,183 @@
     </a>
 
     <div class="project-header">
-
-        <h1>TMS 시스템 고도화</h1>
-
-        <p>
-            2024.01 ~ 2025.01
-        </p>
-
+        <h1>운송관리시스템 (TMS) 고도화</h1>
+        <p>2024.01 ~ 2025.01 (1년)</p>
     </div>
 
+    <!-- 개요 -->
     <div class="project-section">
-
         <h2>프로젝트 개요</h2>
-
         <p>
-            보세운송, 항공, 내륙 육상 운송 등 복합 운송 프로세스를 정밀 관리하는 엔터프라이즈 **TMS(Transportation Management System) 고도화 프로젝트**입니다.
+            보세·항공·내륙 복합 운송 프로세스를 정밀 통제하는 엔터프라이즈 **TMS 고도화 프로젝트**입니다.
+            운임/선사/차량/기사/샤시 등 물류 핵심 마스터 데이터를 체계화하고, 실시간 배차 모니터링 및 컨테이너 단위 정산·수익성 분석 환경을 구축했습니다.
         </p>
-
-        <p>
-            운임코드·선사코드·차량·기사·샤시 장비 등 물류 코어 마스터 데이터를 체계화하고, Location/Depot 거점 모듈과 가용차량의 실시간 배치 프로세스를 구축하였습니다.
-        </p>
-
-        <p>
-            또한 월간 운송 실적 집계 및 컨테이너 단위의 매출/비용/청구 분석 대시보드를 구축하여 정산 자동화 및 정밀한 수익성 분석 환경을 제공하였습니다.
-        </p>
-
     </div>
 
+    <!-- 기술 스택 -->
     <div class="project-section">
-
         <h2>기술 스택</h2>
-
         <div class="tech-stack">
-
             <span>Java</span>
-            <span>Vue.js</span>
             <span>Spring Boot</span>
+            <span>Vue.js</span>
             <span>PostgreSQL</span>
             <span>MyBatis</span>
             <span>REST API</span>
-            <span>GitLab</span>
-
         </div>
-
     </div>
 
+    <!-- 담당 업무 요약 -->
     <div class="project-section">
-
-        <h2>담당 업무</h2>
-
+        <h2>담당 업무 Summary</h2>
         <div class="feature-block">
             <ul>
-
-                <li>운임코드 마스터 등록·수정·조회 REST API 모듈 개발</li>
-
-                <li>선사 마스터 코드 관리 및 EDI 연계 참조 화면 구축</li>
-
-                <li>협력사 차량 및 운송 기사 통합 관리 파이프라인 구축</li>
-
-                <li>컨테이너 샤시 장비 마스터 및 정비/검사 이력 트래킹 기능 개발</li>
-
-                <li>Location/Depot 물류 거점 관리 및 EDI 연계 정보 모듈 개발</li>
-
-                <li>일자별/협력사별 가용차량 실시간 배치 모니터링 개발</li>
-
-                <li>월간 운송 실적(매출·비용·이익) 정산 집계 화면 개발</li>
-
-                <li>컨테이너별 실적 및 청구 대비 비용 다차원 Pivot 분석 화면 개발</li>
-
-                <li>Vue.js + Spring Boot 기반 REST API 설계 및 PostgreSQL 대용량 쿼리 최적화</li>
-
+                <li><strong>마스터 데이터 구축:</strong> 운임, 선사, 차량(1.4만건), 기사, 샤시 장비 마스터 API 및 관리 화면 개발</li>
+                <li><strong>운송 및 배차 통제:</strong> Location/Depot 거점 관리 및 일자/협력사별 가용차량 실시간 배차 모듈 구현</li>
+                <li><strong>정산 및 분석:</strong> 월간 운송 실적 집계 및 컨테이너별 매출/비용/이익 Pivot 분석 대시보드 구축</li>
+                <li><strong>성능 최적화:</strong> PostgreSQL 대용량 쿼리 튜닝 및 Server-side Pagination 도입</li>
             </ul>
         </div>
-
     </div>
 
+    <!-- 주요 기능 -->
     <div class="project-section">
-
-        <h2>주요 기능</h2>
+        <h2>주요 기능 및 성과</h2>
 
         <div class="feature-block">
-            <h3>운임코드 관리</h3>
-
-            <p>
-                보세운송, 항공 등 운송 모드별 수백여 개의 운임 코드를 마스터 데이터화하여 관리합니다.
-            </p>
-
+            <h3>1. 기준정보(Master Data) 통합 관리</h3>
+            <p>보세/항공 운임코드(220여건), 선사/세관코드(920여건) 다차원 파라미터 관리 모듈 개발</p>
             <ul>
-
-                <li>시스템·운임그룹·실적구분 다차원 조건 기반 운임코드 관리 모듈 구현</li>
-
-                <li>청구코드명 및 비용코드명 연계 매핑 파이프라인 개발</li>
-
-                <li>세금구분, 부가세율, 청구용도, 지불용도 등 세무/정산 속성 관리</li>
-
-                <li>CY 지정 여부 및 기존 레거시 코드 마이그레이션 매핑 로직 적용</li>
-
-                <li>220건 이상의 핵심 운임 코드 목록의 실시간 조회 및 필터링 제공</li>
-
+                <li>차량(14,722건) 및 기사(5,014건) 프로필의 Server-side Pagination 처리로 조회 속도 개선</li>
+                <li>컨테이너 샤시 장비의 정비 이력 및 다중 검사 주기(사무소/최종/만료일) 연계 추적</li>
+                <li>Location/Depot 거점 매핑 및 COPINO EDI 연계 속성 관리 체계 구축</li>
             </ul>
         </div>
 
         <div class="feature-block">
-            <h3>선사코드 관리</h3>
-
-            <p>
-                해상 및 복합 운송에 사용되는 선사 정보와 세관 연동 코드를 통제합니다.
-            </p>
-
+            <h3>2. 실시간 배차 및 월간 실적 분석 대시보드</h3>
+            <p>일자·부서·협력사별 가용 배차 현황 파악 및 월 단위 운송 트랜잭션 실시간 집계</p>
             <ul>
-
-                <li>선사코드, 선사명, 세관 대표코드 기반 멀티 파라미터 검색 지원</li>
-
-                <li>주선사 여부, Main VAN사, 거래처코드 연계 속성 파라미터 처리</li>
-
-                <li>선사 약칭, 적용 여부, 사용 플래그 관리 모듈 개발</li>
-
-                <li>926건 이상 선사 마스터 목록의 페이징 및 다중 선택 모듈 구축</li>
-
+                <li>운임 항목별 매출(운송료/부가/부대)/비용 분류 및 Pivot 집계 Engine 구현</li>
+                <li>W/O No., CNTR No. 기준 컨테이너 단위 손익(청구 대비 비용) 다차원 밀착 분석</li>
             </ul>
         </div>
-
-        <div class="feature-block">
-            <h3>차량코드·차량기사 관리</h3>
-
-            <p>
-                1만 4천여 건 이상의 협력사 차량과 5천여 건의 운송 기사 프로필을 체계적으로 운용합니다.
-            </p>
-
-            <ul>
-
-                <li>차량 단축No, 영업번호, 차량소유형, 운송형태 다중 조건 파이프라인 구현</li>
-
-                <li>기본정보·추가정보·FPIS(화물운송실적관리) 탭 구조의 UI 설계</li>
-
-                <li>14,722건 대용량 차량 마스터의 Server-side Pagination 처리 완료</li>
-
-                <li>기사코드, 소속사, 스마트워크 모바일 앱 사용 여부 매핑 관리</li>
-
-                <li>모바일 APP 연동 데이터 전송 및 계약 기간 만료 알림 관리 기능 연동</li>
-
-                <li>5,014건 기사 정보의 고속 검색 및 필터링 기능 제공</li>
-
-            </ul>
-        </div>
-
-        <div class="feature-block">
-            <h3>사시코드·사시정비 관리</h3>
-
-            <p>
-                컨테이너 샤시(Chassis) 장비의 정비 이력 및 법정 검사 주기를 통합 관리합니다.
-            </p>
-
-            <ul>
-
-                <li>사시코드, 사시구분, 사시TYPE 기반 상태 모니터링 구현</li>
-
-                <li>사시상태(최고·양호·수리요망), 연식, 특이사항, 검사주기 관리</li>
-
-                <li>사무소 검사일·최종검사일·추후검사일·검사만료일 등 다중 날짜 검증 체계 구현</li>
-
-                <li>정비 이력(정비일자, 사유, 협력사, 정비비용) 등록 및 추적 모듈 개발</li>
-
-            </ul>
-        </div>
-
-        <div class="feature-block">
-            <h3>Location / Depot 관리</h3>
-
-            <p>
-                운송 거점(Location)과 터미널 Depot 정보 및 EDI 통신 설정을 연계합니다.
-            </p>
-
-            <ul>
-
-                <li>지역코드·지역명·부서코드 기반 거점 Master Data 조회 모듈 개발</li>
-
-                <li>Depot 코드, Type(화주작업지 등), 담당자, 주소, 연락처 파라미터 바인딩</li>
-
-                <li>COPINO 전송유무, KLNET ID, CY, PATH 등 EDI 연계 속성 통제</li>
-
-                <li>보세구역 장치장 코드 및 보세특례구역 지정 설정 모듈 제공</li>
-
-                <li>223건 Location / 143건 Depot 데이터의 좌우 Master-Detail 연계 조회 구축</li>
-
-            </ul>
-        </div>
-
-        <div class="feature-block">
-            <h3>가용차량 관리</h3>
-
-            <p>
-                일자별, 부서별, 협력사별 가용 배차 현황을 실시간 파악하고 수불 라인에 배치합니다.
-            </p>
-
-            <ul>
-
-                <li>가용일자, 부서코드, 협력사, 단축No 다중 파라미터 실시간 검색 모듈 개발</li>
-
-                <li>차량ID, 영업NO, 차량타입, 담당기사 등 배차 운용 정보 바인딩</li>
-
-                <li>배차 가능 상태별 필터링 및 동적 행 추가/삭제 트랜잭션 제어</li>
-
-            </ul>
-        </div>
-
-        <div class="feature-block">
-            <h3>월간 실적 조회</h3>
-
-            <p>
-                월 단위 운송 트랜잭션을 기반으로 매출·비용·정산 상태를 실시간 집계합니다.
-            </p>
-
-            <ul>
-
-                <li>마감(전기)월 기준 거래처·W/O 구분·부서코드 조건별 집계 연산 모듈 구현</li>
-
-                <li>운임 항목별 매출(운송료, 부가서비스, 부대매출, FIMS매출) Pivot 구조 표시</li>
-
-                <li>운임 비용 및 청구 구획(전월·당월·선청구·미청구) 자동 분류 로직 적용</li>
-
-                <li>그리드 하단 합계 및 소계 Row 자동 계산 Engine 구현</li>
-
-            </ul>
-        </div>
-
-        <div class="feature-block">
-            <h3>컨테이너별 실적·청구 대비 분석</h3>
-
-            <p>
-                컨테이너 개별 단위로 운송 손익을 산출하여 운송 수익성을 밀착 분석합니다.
-            </p>
-
-            <ul>
-
-                <li>W/O No., CNTR No. 기반 컨테이너 단위 정밀 이력 추적 구현</li>
-
-                <li>I/O(수입/수출), 철송 여부, 실적 유형별 복합 필터 조건 적용</li>
-
-                <li>'청구 대비 비용' vs '비용 대비 청구' 모드 전환 Pivot 조회 알고리즘 개발</li>
-
-                <li>매출·비용·이익·이익률 및 세부 매출 요소(운송료/부가/부대/기타) 다차원 분석</li>
-
-                <li>하단 통계 Summary Row 자동 집계 파이프라인 연동</li>
-
-            </ul>
-        </div>
-
     </div>
 
-    <!-- ===== 주요 화면 ===== -->
+    <!-- 주요 화면 -->
     <div class="project-section">
-
         <h2>주요 화면</h2>
 
         <div class="screenshot-grid">
-
             <div class="screenshot-item">
                 <div class="screenshot-label">운임코드 관리</div>
-                <img src="tms_01.png" alt="운임코드관리 화면" class="screenshot-img">
-                <p class="screenshot-desc">
-                    시스템·운임그룹별 운임코드를 등록·조회하는 화면입니다.
-                    상단 입력 폼과 하단 코드 목록을 분리하여 220건 이상의 코드를 관리합니다.
-                </p>
+                <img src="tms_01.png" alt="운임코드관리" class="screenshot-img">
+                <p class="screenshot-desc">상단 조건 입력 및 하단 220여 건의 운임코드 목록 연계 관리</p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">선사코드 관리</div>
-                <img src="tms_02.png" alt="선사코드관리 화면" class="screenshot-img">
-                <p class="screenshot-desc">
-                    선사코드·세관코드·Main VAN사 등 선사 정보를 등록·조회합니다.
-                    926건 이상의 선사 목록을 다중 선택 및 페이징으로 처리합니다.
-                </p>
+                <img src="tms_02.png" alt="선사코드관리" class="screenshot-img">
+                <p class="screenshot-desc">선사·세관코드·Main VAN사 등 920여 건의 마스터 조회 및 페이징</p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">차량코드 관리</div>
-                <img src="tms_03.png" alt="차량코드관리 화면" class="screenshot-img">
-                <p class="screenshot-desc">
-                    차량 기본정보·추가정보·FPIS정보를 탭 구조로 관리합니다.
-                    14,722건 대용량 차량 목록을 페이징으로 처리하며, 협력사·차량유형 조건 검색을 지원합니다.
-                </p>
+                <img src="tms_03.png" alt="차량코드관리" class="screenshot-img">
+                <p class="screenshot-desc">기본/추가/FPIS 탭 구조 및 1.4만 건 차량 Server-side 페이징</p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">차량기사 관리</div>
-                <img src="tms_04.png" alt="차량기사관리 화면" class="screenshot-img">
-                <p class="screenshot-desc">
-                    기사코드·유형·소속사·스마트워크 앱 연동 정보를 관리합니다.
-                    5,014건 기사 목록 조회 및 APP 전송 기능을 제공합니다.
-                </p>
+                <img src="tms_04.png" alt="차량기사관리" class="screenshot-img">
+                <p class="screenshot-desc">5천여 건 기사 프로필 관리 및 모바일 APP 연동 전송 기능</p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">샤시코드 관리</div>
-                <img src="tms_05.png" alt="샤시코드관리 화면" class="screenshot-img">
-                <p class="screenshot-desc">
-                    컨테이너 샤시 장비의 코드·상태·검사일자를 통합 관리합니다.
-                    사무소 검사일, 최종·추후·만료 검사일 등 다중 날짜 속성을 지원합니다.
-                </p>
+                <img src="tms_05.png" alt="샤시코드관리" class="screenshot-img">
+                <p class="screenshot-desc">샤시 장비 상태 및 다중 검사만료일 통합 관리</p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">샤시정비 관리</div>
-                <img src="tms_06.png" alt="샤시정비관리 화면" class="screenshot-img">
-                <p class="screenshot-desc">
-                    샤시별 정비 이력(정비일자·사유·협력사·금액)을 등록·조회합니다.
-                    차량영업번호와 연계하여 정비 내역을 추적할 수 있습니다.
-                </p>
+                <img src="tms_06.png" alt="샤시정비관리" class="screenshot-img">
+                <p class="screenshot-desc">차량영업번호 연계 샤시 정비 이력 및 비용 추적</p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">Location / Depot 관리</div>
-                <img src="tms_07.png" alt="Location Depot 관리 화면" class="screenshot-img">
-                <p class="screenshot-desc">
-                    좌측 Location 목록과 우측 Depot 상세 정보를 연계 표시합니다.
-                    COPINO EDI 연계 정보 및 보세구역 설정을 함께 관리합니다.
-                </p>
+                <img src="tms_07.png" alt="Location Depot 관리" class="screenshot-img">
+                <p class="screenshot-desc">좌측 Location - 우측 Depot 연계 및 EDI 통신 설정 관리</p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">월간 실적 조회</div>
-                <img src="tms_08.png" alt="월간실적 화면" class="screenshot-img">
-                <p class="screenshot-desc">
-                    월 단위 운임별 매출·비용·이익을 집계하여 표시합니다.
-                    운송료·부가서비스·부대매출·FIMS 항목별 세부 금액을 분류 조회합니다.
-                </p>
+                <img src="tms_08.png" alt="월간실적" class="screenshot-img">
+                <p class="screenshot-desc">월 단위 운송료/부가/부대 항목별 매출·비용 Pivot 집계</p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">컨테이너별 실적</div>
-                <img src="tms_09.png" alt="컨테이너별 실적 화면" class="screenshot-img">
-                <p class="screenshot-desc">
-                    컨테이너 단위로 I/O 구분, 철송 여부를 조건으로 실적을 조회합니다.
-                    수입·수출 분리 및 다양한 필터로 운송 실적 현황을 파악합니다.
-                </p>
+                <img src="tms_09.png" alt="컨테이너별 실적" class="screenshot-img">
+                <p class="screenshot-desc">I/O 구분, 철송 여부 조건별 컨테이너 실적 현황 조회</p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">컨테이너 청구·비용 대비</div>
-                <img src="tms_10.png" alt="컨테이너 청구비용대비 화면" class="screenshot-img">
-                <p class="screenshot-desc">
-                    청구대비비용·비용대비청구를 전환하여 수익성을 분석합니다.
-                    W/O No.·CNTR No. 기준으로 매출·비용·이익·이익률을 산출합니다.
-                </p>
+                <img src="tms_10.png" alt="컨테이너 청구비용대비" class="screenshot-img">
+                <p class="screenshot-desc">W/O·CNTR 단위 손익 산출 및 청구 대비 비용 다차원 분석</p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">가용차량 관리</div>
-                <img src="tms_11.png" alt="가용차량관리 화면" class="screenshot-img">
-                <p class="screenshot-desc">
-                    날짜·부서·협력사 조건으로 가용 차량 현황을 조회합니다.
-                    차량ID·영업NO·차량타입·기사명 등 운용 정보를 실시간으로 확인할 수 있습니다.
-                </p>
+                <img src="tms_11.png" alt="가용차량관리" class="screenshot-img">
+                <p class="screenshot-desc">일자·부서·협력사별 가용 배차 현황 실시간 모니터링</p>
             </div>
-
         </div>
-
     </div>
 
+    <!-- 트러블 슈팅 -->
     <div class="project-section">
-
-        <h2>트러블 슈팅</h2>
+        <h2>트러블 슈팅 (Problem Solving)</h2>
 
         <div class="feature-block">
-            <h3>대용량 물류 기초코드 및 차량 데이터(14,000+건) 조회 튜닝</h3>
-
-            <p>
-                14,000건 이상의 차량 마스터 및 5,000건 이상의 기사 데이터 조회 시 발생하던 DB Full Scan 병목과 프론트엔드 그리드 렌더링 지연을 조치했습니다.
-            </p>
-
+            <h3>1. 1.4만건 대용량 차량/기사 데이터 조회 성능 최적화</h3>
             <div class="sub-block">
-                <h4>문제 상황</h4>
+                <h4>문제 및 원인</h4>
+                <p>다중 JOIN 실행 시 Query Timeout 발생 및 Front-end 그리드 바인딩 과부하</p>
+            </div>
+            <div class="sub-block">
+                <h4>해결 방안</h4>
                 <ul>
-                    <li>대용량 기초코드 테이블과 운송 실적 테이블 간 다중 JOIN 실행 시 Query Timeout 발생</li>
-                    <li>Vue.js 화면 진입 시 만 여 건의 데이터를 한 번에 바인딩하여 브라우저 렉 현상 발생</li>
+                    <li>조회 조건 컬럼 복합 인덱스 생성 및 불필요한 Inline View 리팩토링</li>
+                    <li>PostgreSQL `OFFSET-LIMIT` 기반 Server-side Pagination 도입</li>
                 </ul>
             </div>
-
-            <div class="sub-block">
-                <h4>원인 분석</h4>
-                <ul>
-                    <li>`EXPLAIN PLAN` 분석 결과 `차량영업번호`, `기사코드`, `선사코드` 조건절 인덱스 부재 확인</li>
-                    <li>필요 이상의 서브쿼리 남발 및 불필요한 전체 필드 조회(`SELECT *`) 확인</li>
-                </ul>
-            </div>
-
-            <div class="sub-block">
-                <h4>개선 작업</h4>
-                <ul>
-                    <li>주요 조회 조건 컬럼 복합 인덱스 추가 및 PostgreSQL Query Optimizer 힌트 적용</li>
-                    <li>SQL 튜닝: 불필요한 JOIN 절을 삭제하고 Inline View 형태로 쿼리 구조 리팩토링</li>
-                    <li>PostgreSQL `OFFSET-LIMIT` 기반 Server-side Pagination을 완벽 도입하여 1회 로딩 데이터 제어</li>
-                </ul>
-            </div>
-
             <div class="sub-block">
                 <h4>결과</h4>
-                <ul>
-                    <li>대용량 마스터 데이터 조회 latency 단축 및 서버 I/O 부하 감소</li>
-                    <li>Vue.js 그리드 초기 로딩 응답속도 대폭 향상</li>
-                </ul>
+                <p>초기 데이터 로딩 속도 단축 및 서버 I/O 부하 절감</p>
             </div>
         </div>
 
         <div class="feature-block">
-            <h3>월간 실적 집계 쿼리 및 소계/합계 불일치 조치</h3>
-
-            <p>
-                운임 항목별 실적 집계 시 특정 W/O(Work Order) 작업 조건에서 하단 소계 수치와 세부 데이터 합산이 불일치하는 오류를 해결했습니다.
-            </p>
-
+            <h3>2. 월간 실적 집계 소계/합계 불일치 조치</h3>
             <div class="sub-block">
-                <h4>문제 상황</h4>
+                <h4>문제 및 원인</h4>
+                <p>특정 W/O 조건 연산 시 `NULL` 값 산출 항목 미처리로 집계 수치 오차 발생</p>
+            </div>
+            <div class="sub-block">
+                <h4>해결 방안</h4>
                 <ul>
-                    <li>월간 실적 화면에서 운임 항목별 매출 소계와 하단 통합 합계 Row의 금액 차이 발생</li>
-                    <li>특정 부대매출(FIMS 등) 조건 연산 시 간헐적으로 집계 데이터 누락 현상 포착</li>
+                    <li>SQL 집계 내 `COALESCE` 처리를 통한 NULL 예외 보정</li>
+                    <li>CASE-WHEN Pivot 연산 조건 재설계 및 검증 테스트 케이스 수행</li>
                 </ul>
             </div>
-
-            <div class="sub-block">
-                <h4>원인 분석</h4>
-                <ul>
-                    <li>`GROUP BY` 집계 SQL 쿼리 내 `NULL` 산출 항목 처리 예외 누락 확인</li>
-                    <li>특정 W/O 유형 조건 분기 조건절에서 부대매출 연산 피벗 조건이 오작동함을 확인</li>
-                </ul>
-            </div>
-
-            <div class="sub-block">
-                <h4>개선 작업</h4>
-                <ul>
-                    <li>SQL 집계 내 `COALESCE` / `NVL` 처리를 통한 `NULL` 금액 기본값(0) 보정 연산 적용</li>
-                    <li>운임 집계 CASE-WHEN 조건 분기 로직 완전 재검토 및 검증 테스트케이스 작성</li>
-                </ul>
-            </div>
-
             <div class="sub-block">
                 <h4>결과</h4>
-                <ul>
-                    <li>월간 실적 및 컨테이너 분석 데이터 집계 정확도 100% 확보</li>
-                    <li>정산 데이터 신뢰도 확보를 통한 정산 및 손익 분석 업무 안정화</li>
-                </ul>
+                <p>실적 및 컨테이너 분석 데이터 집계 정확도 100% 확보</p>
             </div>
         </div>
-
-    </div>
-
-    <div class="project-section">
-
-        <h2>프로젝트 성과</h2>
-
-        <div class="feature-block">
-            <ul>
-
-                <li>
-                    운임·선사·차량·기사·샤시 등 물류 핵심 마스터 코드를 표준화하여 물류 데이터 정합성 기반 마련
-                </li>
-
-                <li>
-                    14,000건 이상의 대용량 차량 및 기사 데이터의 Server-side 페이징 처리 및 PostgreSQL SQL 튜닝 완료
-                </li>
-
-                <li>
-                    Location/Depot 물류 거점 매핑 및 COPINO EDI 연계 속성 관리 체계 안정적 구축
-                </li>
-
-                <li>
-                    월간 운송 실적 및 컨테이너별 수익성(청구 대 비용) 분석 대시보드 구축으로 경영 정산 지원
-                </li>
-
-                <li>
-                    보세운송, 샤시 정비, COPINO EDI, FIMS, W/O 정산 등 깊이 있는 운송/물류 전문 도메인 지식 체득
-                </li>
-
-                <li>
-                    요구사항 분석, 데이터베이스 모델링, API 개발, UI 구현, 테스트, 배포 전 과정 수행
-                </li>
-
-            </ul>
-        </div>
-
     </div>
 
 </div>
@@ -510,103 +206,38 @@
 <style>
     .feature-block {
         border-left: 3px solid #4a7fd4;
-        padding: 1.25rem 1.25rem 1.25rem 1.5rem;
-        margin-top: 1.5rem;
+        padding: 1rem 1.25rem;
+        margin-top: 1.25rem;
         background: #f8faff;
         border-radius: 0 8px 8px 0;
     }
-
-    .feature-block h3 {
-        margin-top: 0;
-        margin-bottom: 0.5rem;
-    }
-
-    .feature-block>p {
-        margin-top: 0;
-    }
-
-    .feature-block>ul:first-child,
-    .feature-block>ul {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .sub-block {
-        margin-top: 1rem;
-        padding-top: 1rem;
-        border-top: 1px solid #dde6f5;
-    }
-
-    .sub-block:first-of-type {
-        margin-top: 0.75rem;
-    }
-
-    .sub-block h4 {
-        margin: 0 0 0.4rem 0;
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: #4a7fd4;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-    }
-
-    .sub-block ul {
-        margin: 0;
-    }
+    .feature-block h3 { margin: 0 0 0.5rem 0; font-size: 1.05rem; }
+    .feature-block > p { margin: 0 0 0.5rem 0; color: #444; font-size: 0.95rem; }
+    .feature-block ul { margin: 0; padding-left: 1.2rem; }
+    .sub-block { margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px dashed #dde6f5; }
+    .sub-block:first-of-type { border-top: none; padding-top: 0; }
+    .sub-block h4 { margin: 0 0 0.25rem 0; font-size: 0.85rem; color: #4a7fd4; text-transform: uppercase; }
+    .sub-block p { margin: 0; font-size: 0.9rem; color: #555; }
 
     .screenshot-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        margin-top: 1.5rem;
+        gap: 1.5rem;
+        margin-top: 1.25rem;
     }
-
-    @media (max-width: 768px) {
-        .screenshot-grid {
-            grid-template-columns: 1fr;
-        }
-    }
-
-    .screenshot-item {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-    }
-
+    @media (max-width: 768px) { .screenshot-grid { grid-template-columns: 1fr; } }
+    .screenshot-item { display: flex; flex-direction: column; gap: 0.5rem; }
     .screenshot-label {
-        display: inline-block;
-        font-size: 0.8rem;
-        font-weight: 600;
-        letter-spacing: 0.05em;
-        color: #fff;
-        background: #4a7fd4;
-        border-radius: 4px;
-        padding: 2px 10px;
-        align-self: flex-start;
+        font-size: 0.75rem; font-weight: 600; color: #fff; background: #4a7fd4;
+        border-radius: 4px; padding: 2px 8px; align-self: flex-start;
     }
-
     .screenshot-img {
-        width: 100%;
-        border-radius: 8px;
-        border: 1px solid #e0e4ea;
-        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-        transition: transform 0.2s, box-shadow 0.2s;
-        cursor: zoom-in;
+        width: 100%; border-radius: 6px; border: 1px solid #e0e4ea;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s; cursor: zoom-in;
     }
-
-    .screenshot-img:hover {
-        transform: scale(1.02);
-        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.14);
-    }
-
-    .screenshot-desc {
-        font-size: 0.88rem;
-        line-height: 1.65;
-        color: #555;
-        margin: 0;
-    }
+    .screenshot-img:hover { transform: scale(1.01); }
+    .screenshot-desc { font-size: 0.82rem; color: #666; margin: 0; }
 </style>
 
 </body>
-
 </html>
