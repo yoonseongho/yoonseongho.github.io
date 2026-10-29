@@ -1,293 +1,628 @@
+
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCM / e-Accounting 유지보수 | 윤성호 Portfolio</title>
+    <meta
+        name="description"
+        content="SCM 및 e-Accounting 시스템의 UI 개선, JavaScript 기능 개발, 데이터 처리와 운영 이슈 해결 경험을 담은 프론트엔드 포트폴리오"
+    >
+    <title>SCM / e-Accounting 유지보수 | 윤성호 Frontend Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-
 <main class="project-page">
 
     <a href="index.html" class="detail-btn">
-        ← Portfolio로 돌아가기
+        ← 포트폴리오로 돌아가기
     </a>
 
-    <div class="project-header">
+    <header class="project-header">
+        <p class="project-category">FRONTEND DEVELOPMENT · SYSTEM MAINTENANCE</p>
         <h1>SCM / e-Accounting 시스템 운영 및 유지보수</h1>
-        <p>2024.01 ~ 현재</p>
-    </div>
+        <p class="project-period">2024.01 ~ 현재</p>
 
-    <div class="project-section">
+        <p class="project-intro">
+            실서비스의 구매·물류 및 회계 시스템을 유지보수하며
+            사용자 화면 개선, 업무 데이터 조회 및 상태 처리 오류 해결을 수행한 프로젝트입니다.
+            기존 시스템의 동작 흐름을 분석하고 업무 사용성을 높이는 데 중점을 두었습니다.
+        </p>
+    </header>
+
+    <section class="project-section">
         <h2>프로젝트 개요</h2>
 
-        <p>
-            Kolmar BNH의 핵심 서비스인
-            <strong>공급망 관리 시스템(SCM)</strong>과
-            <strong>전자 회계 시스템(e-Accounting)</strong>의 안정적인 운영을 위한
-            기능 개선 및 시스템 유지보수 프로젝트입니다.
-        </p>
+        <div class="feature-block">
+            <p>
+                Kolmar BNH의 핵심 업무 시스템인
+                <strong>공급망 관리 시스템(SCM)</strong>과
+                <strong>전자 회계 시스템(e-Accounting)</strong>의
+                기능 개선 및 운영 유지보수를 수행했습니다.
+            </p>
 
-        <p>
-            <strong>SCM:</strong>
-            발주 접수, 납품예정 등록, 납품 현황 조회, 입고실적 마감 등
-            구매·물류 업무 전 과정의 오류를 조치하고 집계 로직을 개선하였습니다.
-        </p>
+            <p>
+                <strong>SCM</strong>에서는 발주 접수, 납품예정 등록,
+                납품 현황 조회, 입고실적 마감 등 구매·물류 업무 화면과
+                관련 데이터 집계 로직을 점검하고 오류를 개선했습니다.
+            </p>
 
-        <p>
-            <strong>e-Accounting:</strong>
-            법인카드, 세금계산서, 일반전표, 개인경비 등 5개 전표 유형의
-            상신·결재·승인 워크플로우를 유지보수하고 트랜잭션 처리 과정의
-            데이터 정합성을 개선하였습니다.
-        </p>
-    </div>
+            <p>
+                <strong>e-Accounting</strong>에서는 법인카드, 세금계산서,
+                일반전표, 개인경비 등 다양한 전표 유형의 상신·결재·승인 기능을 유지보수하고,
+                상태 전환 및 일괄 처리 과정에서 발생하는 데이터 정합성 문제를 개선했습니다.
+            </p>
 
-    <div class="project-section">
-        <h2>기술 스택</h2>
-
-        <div class="tech-stack">
-            <span>Java</span>
-            <span>JavaScript</span>
-            <span>Spring Framework</span>
-            <span>Oracle</span>
-            <span>MyBatis</span>
-            <span>REST API</span>
-            <span>GitLab</span>
+            <p>
+                프론트엔드 관점에서는 업무 화면의 입력 및 조회 흐름,
+                UI/UX 개선, 엑셀 다운로드 등 사용자 편의 기능과
+                화면에서 사용하는 데이터 처리 로직을 중점적으로 다뤘습니다.
+            </p>
         </div>
-    </div>
+    </section>
 
-    <div class="project-section">
+    <section class="project-section">
+        <h2>기술 스택</h2>
+        <p class="section-description">
+            실제 운영 환경에서 기능 개선과 데이터 처리에 활용한 기술입니다.
+        </p>
+
+        <div class="tech-group">
+            <h3>Frontend</h3>
+            <div class="tech-stack">
+                <span>JavaScript</span>
+                <span>UI/UX 개선</span>
+                <span>HTML / CSS</span>
+            </div>
+        </div>
+
+        <div class="tech-group">
+            <h3>Backend & Data</h3>
+            <div class="tech-stack">
+                <span>Java</span>
+                <span>Spring Framework</span>
+                <span>REST API</span>
+                <span>MyBatis</span>
+                <span>Oracle</span>
+            </div>
+        </div>
+
+        <div class="tech-group">
+            <h3>Collaboration</h3>
+            <div class="tech-stack">
+                <span>GitLab</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-section">
         <h2>담당 업무</h2>
+        <p class="section-description">
+            기존 업무 화면과 데이터 처리 흐름을 분석하고,
+            사용자가 업무를 안정적으로 수행할 수 있도록 기능을 개선했습니다.
+        </p>
 
         <div class="feature-block">
-            <ul>
+            <ul class="responsibility-list">
                 <li>
-                    <strong>SCM 발주 및 납품 프로세스 개선:</strong>
-                    발주 접수, 납품예정 등록 및 시간대별·마감 기준 납품 현황 조회 로직 개선
+                    <strong>업무 화면 UI/UX 개선</strong>
+                    <p>
+                        전표 유형별 생성 화면과 조회 화면의 사용성을 개선하고,
+                        엑셀 다운로드 등 업무 편의 기능을 보완했습니다.
+                    </p>
                 </li>
 
                 <li>
-                    <strong>물류 데이터 정합성 관리:</strong>
-                    구매 잔여 수량 산출 및 제품 입고·마감 집계 쿼리 오류 수정
+                    <strong>발주·납품 데이터 조회 개선</strong>
+                    <p>
+                        발주 접수, 납품예정 등록 및 시간대별·마감 기준 납품 현황 조회 로직을 점검하고 개선했습니다.
+                    </p>
                 </li>
 
                 <li>
-                    <strong>전표 워크플로우 유지보수:</strong>
-                    법인카드·세금계산서·일반전표 등 전표 유형별 일괄 상신 및 후속 증빙 연계 로직 보완
+                    <strong>검색 결과 및 집계 데이터 정합성 개선</strong>
+                    <p>
+                        구매 잔여 수량과 납품 실적 집계 SQL을 검토해 화면에 표시되는 데이터의 불일치 문제를 조치했습니다.
+                    </p>
                 </li>
 
                 <li>
-                    <strong>결재·승인 프로세스 안정화:</strong>
-                    부서 결재 및 회계 담당자·팀장 승인 단계별 상태 전환 오류 조치와 일괄 처리 트랜잭션 보완
+                    <strong>전표 상신·결재 화면 기능 유지보수</strong>
+                    <p>
+                        전표 유형별 처리 흐름과 결재 상태 표시 관련 오류를 분석하고,
+                        일괄 상신 및 승인 기능의 처리 로직을 보완했습니다.
+                    </p>
                 </li>
 
                 <li>
-                    <strong>운영 지원:</strong>
-                    운영 장애 대응, 엑셀 다운로드 등 업무 편의 기능 개선 및 레거시 코드 리팩토링
+                    <strong>화면과 서버 간 데이터 처리 점검</strong>
+                    <p>
+                        업무 요청에 따른 데이터 처리 흐름을 확인하고,
+                        상태값 갱신 및 예외 상황에서 발생하는 문제를 개선했습니다.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>운영 이슈 대응 및 레거시 코드 개선</strong>
+                    <p>
+                        기존 코드의 동작 구조를 분석하고 운영 중 발생한 오류를 수정해 업무 기능의 안정성을 높였습니다.
+                    </p>
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
 
-    <div class="project-section">
-        <h2>주요 기능</h2>
+    <section class="project-section">
+        <h2>주요 구현 및 개선 기능</h2>
 
-        <div class="feature-block">
-            <h3>발주 및 납품 관리 (SCM)</h3>
+        <article class="feature-block">
+            <span class="feature-number">01 · SCM</span>
+            <h3>발주 및 납품 관리 화면</h3>
 
             <p>
-                구매·납품 업무의 핵심인 발주서 접수부터 시간대별·단가별 납품 집계까지
-                관련 프로세스를 유지보수하고 개선하였습니다.
+                발주 접수부터 납품예정 등록, 납품 현황 확인까지
+                구매·물류 담당자가 사용하는 업무 흐름을 지원하는 기능을 유지보수했습니다.
             </p>
 
             <ul>
                 <li>발주 미접수 건 필터링 및 발주 알림 로직 개선</li>
-                <li>납품예정 등록 및 고객사 전송 시 상태값 갱신 오류 조치</li>
+                <li>납품예정 등록 및 고객사 전송 후 상태값 갱신 오류 수정</li>
                 <li>발주서별·시간대별 납품 현황 집계 및 차트 표시 로직 개선</li>
-                <li>구매 잔여량 산출 SQL 로직 보완을 통한 데이터 정합성 확보</li>
+                <li>구매 잔여 수량 산출 SQL을 보완해 조회 데이터 정합성 개선</li>
+                <li>마감 기준에 맞는 납품 실적 조회 및 집계 처리 점검</li>
             </ul>
-        </div>
+        </article>
 
-        <div class="feature-block">
-            <h3>전표 생성 및 상신 (e-Accounting)</h3>
+        <article class="feature-block">
+            <span class="feature-number">02 · E-ACCOUNTING</span>
+            <h3>전표 생성 및 일괄 상신</h3>
 
             <p>
-                법인카드, 세금계산서, 일반전표, 개인경비 등 다양한 유형의
-                전표 처리 및 증빙 연계 기능을 보완하였습니다.
+                다양한 유형의 전표를 생성하고 결재로 전달하는 업무 화면과
+                데이터 처리 로직을 개선했습니다.
             </p>
 
             <ul>
-                <li>전표 유형별 생성 화면 UI/UX 개선 및 예외 처리 로직 추가</li>
-                <li>다건 전표 일괄 상신 및 전표 그룹 상신 시 트랜잭션 처리 보완</li>
-                <li>세금계산서 및 일반전표 후속 증빙 연동 기능 개선</li>
+                <li>전표 유형별 생성 화면의 UI/UX 및 예외 처리 개선</li>
+                <li>다건 전표 일괄 상신 시 데이터 처리 흐름 점검</li>
+                <li>전표 그룹 상신 과정의 트랜잭션 및 오류 처리 보완</li>
+                <li>세금계산서 및 일반전표의 후속 증빙 연계 기능 개선</li>
             </ul>
-        </div>
+        </article>
 
-        <div class="feature-block">
-            <h3>다단계 결재 및 승인 워크플로우 (e-Accounting)</h3>
+        <article class="feature-block">
+            <span class="feature-number">03 · E-ACCOUNTING</span>
+            <h3>다단계 결재 및 승인 상태 관리</h3>
 
             <p>
-                부서 결재부터 회계팀 최종 승인까지 이어지는 결재 프로세스의
-                상태 전환 및 승인 처리 로직을 개선하였습니다.
+                부서 결재부터 회계 담당자 및 팀장 승인까지 이어지는
+                전표 처리 흐름을 점검하고 상태 전환 관련 문제를 개선했습니다.
             </p>
 
             <ul>
-                <li>부서 결재 후 승인 대기 목록에 전표가 표시되지 않는 문제 조치</li>
-                <li>회계 담당자·팀장 전표 일괄 승인 및 반려 처리 시 동시성·예외 처리 보완</li>
-                <li>전표 현황 조회 및 엑셀 다운로드 기능 개선</li>
+                <li>부서 결재 후 승인 대기 목록에 전표가 표시되지 않는 문제 해결</li>
+                <li>전표 유형별 결재 상태 전환 로직의 누락된 처리 케이스 보완</li>
+                <li>일괄 승인 및 반려 처리 과정의 예외 처리 개선</li>
+                <li>전표 현황 조회 및 엑셀 다운로드 기능 유지보수</li>
             </ul>
-        </div>
-    </div>
+        </article>
+    </section>
 
-    <div class="project-section">
+    <section class="project-section">
         <h2>트러블 슈팅</h2>
 
-        <div class="feature-block">
-            <h3>1. 납품 현황 집계 데이터 불일치 해결</h3>
+        <article class="feature-block">
+            <span class="feature-number">ISSUE 01 · SCM</span>
+            <h3>납품 현황 집계 데이터 불일치</h3>
 
             <p>
-                마감 기준 납품 현황 화면의 수치와 납품예정 등록 수량이 일치하지 않고
-                일부 데이터가 중복 집계되는 문제를 해결하였습니다.
+                마감 기준 납품 현황 화면의 수치와 납품예정 등록 수량이 일치하지 않고,
+                일부 데이터가 중복 집계되는 문제를 해결했습니다.
             </p>
 
             <div class="sub-block">
-                <h4>원인 분석</h4>
-
+                <h4>문제 원인</h4>
                 <ul>
-                    <li>GROUP BY 집계 쿼리에서 고객사 전송 상태에 따른 조건 분기 누락</li>
-                    <li>전송 처리 후 DB 상태값이 갱신되지 않아 동일 건이 중복 집계되는 문제 확인</li>
+                    <li>GROUP BY 집계 쿼리에서 고객사 전송 상태에 따른 조건 분기가 누락됨</li>
+                    <li>전송 후 DB 상태값이 정상적으로 반영되지 않아 동일 건이 중복 집계됨</li>
                 </ul>
             </div>
 
             <div class="sub-block">
-                <h4>조치 및 결과</h4>
-
+                <h4>개선 작업</h4>
                 <ul>
-                    <li>전송 상태 조건 분기를 추가하고 NVL 처리를 통해 NULL 집계 오류 보정</li>
-                    <li>전송 프로세스 완료 후 상태값이 정상 반영되도록 트랜잭션 처리 보완</li>
-                    <li>
-                        <strong>성과:</strong>
-                        미전송·전송 데이터의 집계 정합성을 개선하고 마감 업무의 신뢰도 향상
-                    </li>
+                    <li>전송 상태에 따른 조건 분기를 보완하고 NVL 처리를 통해 NULL 집계 문제 수정</li>
+                    <li>전송 완료 후 상태값이 정상 반영되도록 트랜잭션 처리 흐름 보완</li>
+                    <li>집계 쿼리와 상태값 갱신 과정을 함께 점검해 중복 집계 원인 개선</li>
                 </ul>
             </div>
-        </div>
 
-        <div class="feature-block">
-            <h3>2. 전표 결재 워크플로우 상태 누락 및 트랜잭션 오류 해결</h3>
+            <div class="sub-block">
+                <h4>개선 결과</h4>
+                <p>
+                    미전송·전송 데이터의 집계 조건을 명확히 하고 상태값 갱신 문제를 개선해
+                    납품 현황 조회와 마감 데이터의 정합성을 높였습니다.
+                </p>
+            </div>
+        </article>
+
+        <article class="feature-block">
+            <span class="feature-number">ISSUE 02 · E-ACCOUNTING</span>
+            <h3>전표 결재 상태 누락 및 일괄 처리 오류</h3>
 
             <p>
                 부서 결재 후 승인 화면에서 전표가 누락되거나,
-                일괄 상신 시 일부 전표의 상태값이 갱신되지 않는 문제를 조치하였습니다.
+                일괄 상신 중 일부 전표의 상태값이 정상적으로 갱신되지 않는 문제가 발생했습니다.
             </p>
 
             <div class="sub-block">
-                <h4>원인 분석</h4>
-
+                <h4>문제 원인</h4>
                 <ul>
-                    <li>단계별 상태 전환 로직에서 특정 전표 유형에 대한 처리 분기 누락</li>
-                    <li>일괄 상신 처리 중 일부 전표에서 오류가 발생했을 때 예외 및 트랜잭션 처리가 미흡한 문제 확인</li>
+                    <li>특정 전표 유형의 단계별 상태 전환 처리 분기가 누락됨</li>
+                    <li>일괄 상신 중 일부 항목에서 오류가 발생했을 때 예외 및 트랜잭션 처리가 미흡함</li>
                 </ul>
             </div>
 
             <div class="sub-block">
-                <h4>조치 및 결과</h4>
-
+                <h4>개선 작업</h4>
                 <ul>
-                    <li>전표 유형별 상태 전환 분기 로직을 점검하고 누락된 처리 케이스 보완</li>
-                    <li>일괄 상신 과정의 예외 처리 및 트랜잭션 롤백 로직 개선</li>
-                    <li>
-                        <strong>성과:</strong>
-                        결재 상태 누락 문제를 개선하고 회계 결재 워크플로우 안정성 향상
-                    </li>
+                    <li>전표 유형별 상태 전환 분기를 점검하고 누락된 처리 케이스 보완</li>
+                    <li>일괄 상신 과정의 예외 처리와 트랜잭션 롤백 로직 개선</li>
+                    <li>결재 단계별 상태값과 승인 대기 목록의 조회 조건 점검</li>
                 </ul>
             </div>
-        </div>
-    </div>
 
-    <div class="project-section">
-        <h2>프로젝트 성과</h2>
+            <div class="sub-block">
+                <h4>개선 결과</h4>
+                <p>
+                    결재 상태 누락과 일괄 처리 오류를 개선해
+                    승인 대기 목록의 조회 정확성과 회계 결재 프로세스의 안정성을 높였습니다.
+                </p>
+            </div>
+        </article>
+    </section>
+
+    <section class="project-section">
+        <h2>프로젝트 성과 및 배운 점</h2>
 
         <div class="feature-block">
-            <ul>
+            <ul class="result-list">
                 <li>
-                    <strong>업무 프로세스 안정화:</strong>
-                    발주·납품·입고로 이어지는 SCM 프로세스의 오류를 조치하고 처리 효율 개선
+                    <strong>실서비스 UI 유지보수 경험</strong>
+                    <p>
+                        기존 화면과 업무 흐름을 분석하고,
+                        사용자 요청에 맞춰 입력·조회 인터페이스와 편의 기능을 개선했습니다.
+                    </p>
                 </li>
 
                 <li>
-                    <strong>회계 결재 정합성 개선:</strong>
-                    다양한 전표 유형의 다단계 결재 및 일괄 승인 워크플로우 오류 개선
+                    <strong>화면 데이터 정합성 개선</strong>
+                    <p>
+                        조회 SQL과 상태값 갱신 과정을 함께 점검해
+                        화면에 표시되는 데이터의 불일치와 중복 집계 문제를 해결했습니다.
+                    </p>
                 </li>
 
                 <li>
-                    <strong>데이터 정확도 향상:</strong>
-                    집계 쿼리와 조건 분기를 보완하여 마감 데이터 정합성 개선
+                    <strong>복잡한 업무 상태 처리 이해</strong>
+                    <p>
+                        전표 유형별 결재 단계와 상태 전환 로직을 분석하며
+                        화면의 표시 상태와 서버 데이터 간 일관성을 고려하는 경험을 쌓았습니다.
+                    </p>
                 </li>
 
                 <li>
-                    <strong>운영 역량 강화:</strong>
-                    실서비스 레거시 시스템 분석, 운영 장애 대응 및 코드 리팩토링 경험 축적
+                    <strong>운영 이슈 분석 및 문제 해결</strong>
+                    <p>
+                        레거시 시스템의 기존 동작을 파악하고,
+                        오류 원인 분석부터 수정 및 검증까지 운영 환경에서 문제를 해결했습니다.
+                    </p>
+                </li>
+
+                <li>
+                    <strong>프론트엔드와 데이터 처리 흐름에 대한 이해</strong>
+                    <p>
+                        UI 변경뿐 아니라 API 요청, 데이터 조회, 상태 갱신까지 연결된 흐름을 살펴보며
+                        사용자 화면의 신뢰성과 업무 사용성을 함께 고려했습니다.
+                    </p>
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
+
+    <footer class="project-footer">
+        <a href="index.html" class="detail-btn">
+            ← 전체 포트폴리오 보기
+        </a>
+    </footer>
 
 </main>
 
 <style>
-    .feature-block {
-        border-left: 3px solid #4a7fd4;
-        padding: 1.25rem 1.25rem 1.25rem 1.5rem;
-        margin-top: 1.5rem;
-        background: #f8faff;
-        border-radius: 0 8px 8px 0;
+    .project-page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 64px 40px 80px;
+        overflow-wrap: break-word;
     }
 
-    .feature-block h3 {
-        margin-top: 0;
-        margin-bottom: 0.5rem;
+    .project-header {
+        margin: 44px 0 64px;
+    }
+
+    .project-category {
+        display: inline-block;
+        margin-bottom: 14px;
+        color: #6366f1;
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+    }
+
+    .project-header h1 {
+        color: #4f46e5;
+        font-size: clamp(2rem, 4.5vw, 3rem);
+        line-height: 1.3;
+        margin-bottom: 14px;
+    }
+
+    .project-period {
+        color: #64748b;
+        font-size: 0.95rem;
+        margin-bottom: 22px;
+    }
+
+    .project-intro {
+        max-width: 850px;
+        color: #475569;
+        font-size: 1.05rem;
+        line-height: 1.9;
+    }
+
+    .project-section {
+        margin-bottom: 64px;
+        scroll-margin-top: 32px;
+    }
+
+    .project-section > h2 {
+        margin-bottom: 22px;
+        color: #0f172a;
+        font-size: 1.65rem;
+        line-height: 1.4;
+    }
+
+    .section-description {
+        margin: -8px 0 24px;
+        color: #64748b;
+        line-height: 1.8;
+    }
+
+    .feature-block {
+        margin-top: 20px;
+        padding: 26px 28px;
+        background: #fff;
+        border: 1px solid #e2e8f0;
+        border-left: 4px solid #6366f1;
+        border-radius: 0 12px 12px 0;
+        box-shadow: 0 4px 16px rgba(15, 23, 42, 0.035);
     }
 
     .feature-block > p {
-        margin-top: 0;
+        margin: 0 0 14px;
+        line-height: 1.9;
     }
 
-    .feature-block > ul:first-child,
-    .feature-block > ul {
-        margin-top: 0;
+    .feature-block > p:last-child {
         margin-bottom: 0;
     }
 
-    .sub-block {
-        margin-top: 1rem;
-        padding-top: 1rem;
-        border-top: 1px solid #dde6f5;
+    .feature-block h3 {
+        margin: 6px 0 12px;
+        color: #1e293b;
+        font-size: 1.2rem;
+        line-height: 1.5;
     }
 
-    .sub-block:first-of-type {
-        margin-top: 0.75rem;
+    .feature-block ul {
+        margin: 14px 0 0;
+        padding-left: 22px;
+    }
+
+    .feature-block li {
+        padding-left: 3px;
+        margin-bottom: 9px;
+        line-height: 1.8;
+    }
+
+    .feature-block li:last-child {
+        margin-bottom: 0;
+    }
+
+    .tech-group {
+        margin-top: 24px;
+    }
+
+    .tech-group h3 {
+        margin-bottom: 12px;
+        color: #334155;
+        font-size: 1rem;
+    }
+
+    .tech-stack {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .tech-stack span {
+        display: inline-flex;
+        align-items: center;
+        padding: 8px 14px;
+        color: #4338ca;
+        background: #eef2ff;
+        border: 1px solid #e0e7ff;
+        border-radius: 8px;
+        font-size: 0.9rem;
+        font-weight: 600;
+    }
+
+    .responsibility-list,
+    .result-list {
+        list-style: none;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .responsibility-list li,
+    .result-list li {
+        padding: 15px 0;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .responsibility-list li:first-child,
+    .result-list li:first-child {
+        padding-top: 0;
+    }
+
+    .responsibility-list li:last-child,
+    .result-list li:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .responsibility-list strong,
+    .result-list strong {
+        display: block;
+        margin-bottom: 5px;
+        color: #334155;
+    }
+
+    .responsibility-list p,
+    .result-list p {
+        margin: 0;
+        color: #64748b;
+        line-height: 1.8;
+    }
+
+    .feature-number {
+        color: #6366f1;
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+    }
+
+    .sub-block {
+        margin-top: 22px;
+        padding-top: 20px;
+        border-top: 1px solid #e2e8f0;
     }
 
     .sub-block h4 {
-        margin: 0 0 0.4rem 0;
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: #4a7fd4;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
+        margin: 0 0 10px;
+        color: #4f46e5;
+        font-size: 0.95rem;
+    }
+
+    .sub-block p {
+        margin: 0;
+        line-height: 1.9;
     }
 
     .sub-block ul {
-        margin: 0;
+        margin-top: 0;
+    }
+
+    .project-footer {
+        padding-top: 12px;
+        border-top: 1px solid #e2e8f0;
+    }
+
+    .detail-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 12px 18px;
+        color: #fff;
+        background: #6366f1;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .detail-btn:hover {
+        background: #4f46e5;
+        transform: translateY(-2px);
+    }
+
+    .detail-btn:focus-visible {
+        outline: 3px solid #a5b4fc;
+        outline-offset: 3px;
+    }
+
+    @media (max-width: 768px) {
+        .project-page {
+            padding: 36px 22px 56px;
+        }
+
+        .project-header {
+            margin: 34px 0 46px;
+        }
+
+        .project-section {
+            margin-bottom: 48px;
+        }
+
+        .project-section > h2 {
+            font-size: 1.4rem;
+        }
+
+        .feature-block {
+            padding: 20px;
+        }
+
+        .project-intro {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .project-page {
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+
+        .feature-block {
+            padding: 18px 16px;
+        }
+
+        .tech-stack {
+            gap: 8px;
+        }
+
+        .tech-stack span {
+            padding: 7px 10px;
+            font-size: 0.82rem;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            scroll-behavior: auto !important;
+            transition-duration: 0.01ms !important;
+        }
     }
 </style>
 
