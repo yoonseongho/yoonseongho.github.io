@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="창고관리시스템(WMS) 고도화 프로젝트 - 윤성호 개발자 포트폴리오">
     <title>WMS 시스템 | 윤성호 Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
 
@@ -15,29 +17,33 @@
 
 <body>
 
-<div class="project-page">
+<main class="project-page">
 
     <a href="index.html" class="detail-btn">
         ← Portfolio로 돌아가기
     </a>
 
-    <div class="project-header">
+    <header class="project-header">
         <h1>창고관리시스템 (WMS) 고도화</h1>
         <p>2023.09 ~ 2023.12 (4개월)</p>
-    </div>
+    </header>
 
-    <!-- 개요 -->
-    <div class="project-section">
+    <!-- 프로젝트 개요 -->
+    <section class="project-section">
         <h2>프로젝트 개요</h2>
         <p>
-            입고·출고·재고 등 창고 물류 라이프사이클 전반을 통합 관리하는 **WMS 고도화 프로젝트**입니다.
-            센터/로케이션 단위의 실시간 재고 추적, LOT 및 유통기한 관리, 진행 중 수불(입/출/이동/조정) 현황 대시보드를 구축하여 재고 가시성을 극대화했습니다.
+            입고·출고·재고 등 창고 물류 업무 전반을 관리하는
+            창고관리시스템(WMS) 고도화 프로젝트입니다.
+            센터·존·로케이션 단위의 재고 조회, LOT 및 유통기한 관리,
+            입고·출고·이동·조정 등 재고 수불 현황을 확인할 수 있는 기능을 개발하여
+            재고 관리의 가시성과 업무 효율성을 높이는 데 기여했습니다.
         </p>
-    </div>
+    </section>
 
     <!-- 기술 스택 -->
-    <div class="project-section">
+    <section class="project-section">
         <h2>기술 스택</h2>
+
         <div class="tech-stack">
             <span>Java</span>
             <span>Spring Boot</span>
@@ -46,157 +52,291 @@
             <span>MyBatis</span>
             <span>REST API</span>
         </div>
-    </div>
+    </section>
 
     <!-- 담당 업무 요약 -->
-    <div class="project-section">
+    <section class="project-section">
         <h2>담당 업무 Summary</h2>
+
         <div class="feature-block">
             <ul>
-                <li><strong>입/출고 프로세스:</strong> 입고예정·등록, 출고예정 및 연계 상품 정보 동적 바인딩 UI/API 구현</li>
-                <li><strong>재고 모니터링:</strong> 센터별 Split UI 재고 조회 및 장기보관 상품 필터링 모듈 개발</li>
-                <li><strong>수불 집계 대시보드:</strong> 현 재고와 진행 중인 수불(입/출/이동/조정) 트랜잭션 Pivot 집계 개발</li>
-                <li><strong>성능 최적화:</strong> PostgreSQL 복합 인덱스 적용 및 Vue.js Virtual Scroll 기법 활용</li>
+                <li>
+                    <strong>입·출고 프로세스:</strong>
+                    입고예정·입고등록·출고예정 화면 및 연계 상품 정보 조회 기능 개발
+                </li>
+                <li>
+                    <strong>재고 모니터링:</strong>
+                    센터별 재고 조회, 상품·로케이션 연계 화면 및 장기보관 재고 조회 기능 구현
+                </li>
+                <li>
+                    <strong>수불 집계 대시보드:</strong>
+                    현재고와 입고·출고·이동·조정 등 진행 중인 수불 현황을 통합 조회하는 기능 개발
+                </li>
+                <li>
+                    <strong>조회 성능 개선:</strong>
+                    PostgreSQL 인덱스 및 쿼리 개선, 대량 데이터 화면 처리 방식 최적화
+                </li>
             </ul>
         </div>
-    </div>
+    </section>
 
     <!-- 주요 기능 -->
-    <div class="project-section">
+    <section class="project-section">
         <h2>주요 기능</h2>
 
         <div class="feature-block">
-            <h3>1. 입·출고 모듈 및 단위 환산 연산</h3>
-            <p>센터그룹·고객사 기반 입/출고 워크플로우 제어 및 자동 단위 산출</p>
+            <h3>1. 입·출고 관리 및 단위 환산</h3>
+
+            <p>
+                센터 및 고객사 기준의 입·출고 업무 흐름을 지원하고,
+                상품별 포장 단위에 따른 수량을 관리할 수 있도록 기능을 구현했습니다.
+            </p>
+
             <ul>
-                <li>PLT / BOX / CS / EA 환산 수량 자동 산출 로직 구현</li>
-                <li>LOT, 생산일자, 유통기한 및 잔여 유통일수 자동 계산 알고리즘 적용</li>
+                <li>
+                    PLT / BOX / CS / EA 단위 간 환산 수량 계산 로직 구현
+                </li>
+                <li>
+                    LOT, 생산일자, 유통기한 및 잔여 유통일수 관련 정보 처리
+                </li>
+                <li>
+                    입고예정 정보와 상품 상세 정보를 연계하고 실제 입고 등록 및 확정 처리 지원
+                </li>
+                <li>
+                    출고예정 상태와 출고 대상 상품 정보를 조회하고 확정 수량을 확인할 수 있는 화면 개발
+                </li>
             </ul>
         </div>
 
         <div class="feature-block">
-            <h3>2. 실시간 재고 추적 및 수불 집계 대시보드</h3>
-            <p>센터·존·로케이션 단위 미시 재고 파악 및 수불 상태 통합 모니터링</p>
+            <h3>2. 재고 조회 및 수불 현황 대시보드</h3>
+
+            <p>
+                센터·존·로케이션별 재고 현황과 진행 중인 수불 내역을 조회하여
+                창고 운영 상황을 파악할 수 있는 기능을 개발했습니다.
+            </p>
+
             <ul>
-                <li>Master-Detail(Split UI) 구조로 상품 클릭 시 로케이션별 재고 동적 렌더링</li>
-                <li>보관일수 기준 장기보관 재고 추적 및 품질 속성(일반/보류/불량) 분류</li>
-                <li>현재고와 진행 수량(입고/출고/반출/조정/이동) 통합 Pivot 조회 파이프라인 개발</li>
+                <li>
+                    Master-Detail(Split UI) 구조를 적용해 상품 선택 시
+                    센터 및 로케이션별 재고 상세 정보를 연계 조회
+                </li>
+                <li>
+                    보관일수 기준의 장기보관 재고 조회 기능 구현
+                </li>
+                <li>
+                    일반·보류·불량 등 재고 상태별 수량 조회 기능 개발
+                </li>
+                <li>
+                    현재고와 입고·출고·반출·조정·이동 등 진행 수량을 통합 조회하는 집계 기능 구현
+                </li>
             </ul>
         </div>
-    </div>
+    </section>
 
     <!-- 주요 화면 -->
-    <div class="project-section">
+    <section class="project-section">
         <h2>주요 화면</h2>
 
         <div class="screenshot-grid">
+
             <div class="screenshot-item">
                 <div class="screenshot-label">입고예정 관리</div>
-                <img src="wms_01.png" alt="입고예정 관리" class="screenshot-img">
-                <p class="screenshot-desc">상단 입고예정 목록과 하단 연계 상품(환산 수량) 분리 표시</p>
+                <img src="wms_01.png"
+                     alt="입고예정 관리 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    입고예정 목록과 연계 상품 정보를 구분하여 조회하고 환산 수량 확인
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">입고등록 관리</div>
-                <img src="wms_02.png" alt="입고등록 관리" class="screenshot-img">
-                <p class="screenshot-desc">로케이션, LOT, 유통기한 지정 및 실제 입고 확정 처리</p>
+                <img src="wms_02.png"
+                     alt="입고등록 관리 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    로케이션·LOT·유통기한 정보 입력 및 실제 입고 확정 처리
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">출고예정 조회</div>
-                <img src="wms_03.png" alt="출고예정 조회" class="screenshot-img">
-                <p class="screenshot-desc">출고 진행 상태 및 보세 여부 등 다중 조건 필터링</p>
+                <img src="wms_03.png"
+                     alt="출고예정 조회 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    출고 진행 상태 및 보세 여부 등 다양한 조건에 따른 출고예정 정보 조회
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">출고예정 상품정보</div>
-                <img src="wms_04.png" alt="출고예정 상품정보" class="screenshot-img">
-                <p class="screenshot-desc">출고 대상 상품 바코드 매핑 및 확정 수량 정합성 확인</p>
+                <img src="wms_04.png"
+                     alt="출고예정 상품정보 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    출고 대상 상품의 바코드 정보 연계 및 확정 수량 확인
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">센터별 재고 조회</div>
-                <img src="wms_05.png" alt="센터별 재고 조회" class="screenshot-img">
-                <p class="screenshot-desc">좌측 상품 마스터 - 우측 센터/로케이션별 재고 Split 연계 UI</p>
+                <img src="wms_05.png"
+                     alt="센터별 재고 조회 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    상품 마스터와 센터·로케이션별 재고 상세 정보를 연계한 Split UI
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">장기보관 상품 조회</div>
-                <img src="wms_06.png" alt="장기보관 상품 조회" class="screenshot-img">
-                <p class="screenshot-desc">보관일수 임계값 기준 악성 재고 모니터링 및 추적</p>
+                <img src="wms_06.png"
+                     alt="장기보관 상품 조회 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    보관일수 기준으로 장기보관 상품을 조회하고 재고 상태 확인
+                </p>
             </div>
 
             <div class="screenshot-item">
-                <div class="screenshot-label">상품별 현재고현황</div>
-                <img src="wms_07.png" alt="상품별 현재고현황" class="screenshot-img">
-                <p class="screenshot-desc">일반/보류/불량존 재고 품질 집계 및 로케이션별 수량 바인딩</p>
+                <div class="screenshot-label">상품별 현재고 현황</div>
+                <img src="wms_07.png"
+                     alt="상품별 현재고 현황 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    일반·보류·불량 재고 상태별 집계 및 로케이션별 수량 조회
+                </p>
             </div>
 
             <div class="screenshot-item">
-                <div class="screenshot-label">진행중인 재고현황</div>
-                <img src="wms_08.png" alt="진행중인 재고현황" class="screenshot-img">
-                <p class="screenshot-desc">현 재고와 수불 진행 수량(입/출/이동/조정) 한눈에 조회</p>
+                <div class="screenshot-label">진행 중인 재고 현황</div>
+                <img src="wms_08.png"
+                     alt="진행 중인 재고 현황 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    현재고와 입고·출고·이동·조정 등 진행 중인 수불 수량 통합 조회
+                </p>
             </div>
+
         </div>
-    </div>
+    </section>
 
     <!-- 트러블 슈팅 -->
-    <div class="project-section">
+    <section class="project-section">
         <h2>트러블 슈팅 (Problem Solving)</h2>
 
         <div class="feature-block">
-            <h3>1. 재고 집계 쿼리 및 Vue.js 그리드 DOM 병목 개선</h3>
+            <h3>1. 재고 집계 쿼리 및 프론트엔드 그리드 성능 개선</h3>
+
             <div class="sub-block">
                 <h4>문제 및 원인</h4>
-                <p>다중 GROUP BY/SUM 연산 지연 및 대량 컬럼 바인딩 시 브라우저 스크롤 렉 발생</p>
+                <p>
+                    재고 집계 과정에서 다중 GROUP BY 및 SUM 연산으로 조회가 지연되고,
+                    다량의 데이터를 화면에 바인딩할 때 브라우저 렌더링과 스크롤 반응이
+                    저하되는 문제가 있었습니다.
+                </p>
             </div>
+
             <div class="sub-block">
                 <h4>해결 방안</h4>
                 <ul>
-                    <li>센터/상품/존 조건절 대상 복합 인덱스(Composite Index) 생성</li>
-                    <li>불필요 서브쿼리를 Inline View로 통합 및 Vue.js Virtual Scroll 적용</li>
+                    <li>
+                        센터·상품·존 등 주요 조회 조건에 사용되는 컬럼의 인덱스를 검토하고
+                        복합 인덱스 적용
+                    </li>
+                    <li>
+                        불필요한 서브쿼리와 집계 로직을 점검하여 조회 쿼리 구조 개선
+                    </li>
+                    <li>
+                        대량 데이터 화면의 렌더링 부담을 줄이기 위해
+                        Virtual Scroll 등 화면 처리 방식 검토 및 적용
+                    </li>
                 </ul>
             </div>
+
             <div class="sub-block">
                 <h4>결과</h4>
-                <p>DB I/O 부하 절감 및 프론트엔드 그리드 스크롤 쾌적성 확보</p>
+                <p>
+                    데이터베이스 조회와 화면 렌더링 과정의 불필요한 처리 부담을 줄여
+                    재고 조회 화면의 사용성과 데이터 처리 효율 개선에 기여했습니다.
+                </p>
             </div>
         </div>
 
         <div class="feature-block">
-            <h3>2. 동시 수불 처리 시 진행재고 수량 불일치 조치</h3>
+            <h3>2. 수불 진행 상태에 따른 재고 집계 불일치 해결</h3>
+
             <div class="sub-block">
                 <h4>문제 및 원인</h4>
-                <p>수불 진행 상태 조건 분기 로직 누락 및 PostgreSQL `NULL` 집계 예외 미비</p>
+                <p>
+                    수불 진행 상태별 조건 분기가 충분히 반영되지 않거나,
+                    PostgreSQL 집계 과정에서 NULL 값이 처리되지 않아
+                    진행 재고 수량에 차이가 발생하는 문제가 있었습니다.
+                </p>
             </div>
+
             <div class="sub-block">
                 <h4>해결 방안</h4>
                 <ul>
-                    <li>`COALESCE` 적용으로 NULL 연산 보정 및 수불 상태 조건 케이스 구현</li>
-                    <li>JUnit 기반 동시성 테스트 케이스 작성 및 검증</li>
+                    <li>
+                        COALESCE를 적용해 NULL 값에 대한 집계 처리 기준 보완
+                    </li>
+                    <li>
+                        입고·출고·이동·조정 등 수불 상태별 조건 분기 로직 점검 및 개선
+                    </li>
+                    <li>
+                        다양한 수불 상태와 수량 조합을 기준으로 집계 결과 검증
+                    </li>
                 </ul>
             </div>
+
             <div class="sub-block">
                 <h4>결과</h4>
-                <p>동시 수불 환경에서도 재고 집계 정확도 100% 확보</p>
+                <p>
+                    수불 상태 및 NULL 값에 따른 집계 예외를 보완하여
+                    현재고와 진행 재고 데이터의 일관성을 개선했습니다.
+                </p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- 프로젝트 성과 -->
-    <div class="project-section">
+    <section class="project-section">
         <h2>프로젝트 성과</h2>
+
         <div class="feature-block">
             <ul>
-                <li><strong>재고 가시성 확보:</strong> 센터·존·로케이션 및 LOT 단위 실시간 재고 추적 체계 구축 완료</li>
-                <li><strong>수불 정합성 100%:</strong> 동시 입출고 상황에서도 수불 진행재고와 가용재고 연산 오차 제거</li>
-                <li><strong>운영 효율화:</strong> 장기보관 상품 추적 기능으로 창고 공간 활용도 개선 및 악성 재고 감소 기여</li>
-                <li><strong>대용량 성능 최적화:</strong> Complex Query 집계 연산 튜닝으로 대용량 재고 화면 조회 응답속도 향상</li>
+                <li>
+                    <strong>재고 가시성 개선:</strong>
+                    센터·존·로케이션 및 LOT 관련 정보를 활용해 재고 현황을 세분화하여 조회할 수 있는 환경 구축
+                </li>
+                <li>
+                    <strong>수불 데이터 정합성 개선:</strong>
+                    수불 상태별 집계 로직과 NULL 처리 보완을 통해 진행 재고 조회의 일관성 향상
+                </li>
+                <li>
+                    <strong>재고 관리 업무 지원:</strong>
+                    장기보관 상품 조회 기능을 통해 장기 체류 재고의 확인 및 관리 지원
+                </li>
+                <li>
+                    <strong>조회 성능 개선:</strong>
+                    PostgreSQL 쿼리와 인덱스 구조를 검토하고 대량 데이터 화면 처리 방식을 개선
+                </li>
             </ul>
         </div>
-    </div>
+    </section>
 
-</div>
+</main>
 
 <style>
     .feature-block {
@@ -206,32 +346,114 @@
         background: #f8faff;
         border-radius: 0 8px 8px 0;
     }
-    .feature-block h3 { margin: 0 0 0.5rem 0; font-size: 1.05rem; }
-    .feature-block > p { margin: 0 0 0.5rem 0; color: #444; font-size: 0.95rem; }
-    .feature-block ul { margin: 0; padding-left: 1.2rem; }
-    .sub-block { margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px dashed #dde6f5; }
-    .sub-block:first-of-type { border-top: none; padding-top: 0; }
-    .sub-block h4 { margin: 0 0 0.25rem 0; font-size: 0.85rem; color: #4a7fd4; text-transform: uppercase; }
-    .sub-block p { margin: 0; font-size: 0.9rem; color: #555; }
+
+    .feature-block h3 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.05rem;
+    }
+
+    .feature-block > p {
+        margin: 0 0 0.5rem 0;
+        color: #444;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .feature-block ul {
+        margin: 0;
+        padding-left: 1.2rem;
+    }
+
+    .feature-block li {
+        margin-bottom: 0.35rem;
+        line-height: 1.65;
+    }
+
+    .sub-block {
+        margin-top: 0.75rem;
+        padding-top: 0.5rem;
+        border-top: 1px dashed #dde6f5;
+    }
+
+    .sub-block:first-of-type {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .sub-block h4 {
+        margin: 0 0 0.25rem 0;
+        font-size: 0.85rem;
+        color: #4a7fd4;
+    }
+
+    .sub-block p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #555;
+        line-height: 1.7;
+    }
 
     .screenshot-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1.5rem;
         margin-top: 1.25rem;
     }
-    @media (max-width: 768px) { .screenshot-grid { grid-template-columns: 1fr; } }
-    .screenshot-item { display: flex; flex-direction: column; gap: 0.5rem; }
+
+    .screenshot-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        min-width: 0;
+    }
+
     .screenshot-label {
-        font-size: 0.75rem; font-weight: 600; color: #fff; background: #4a7fd4;
-        border-radius: 4px; padding: 2px 8px; align-self: flex-start;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #fff;
+        background: #4a7fd4;
+        border-radius: 4px;
+        padding: 2px 8px;
+        align-self: flex-start;
     }
+
     .screenshot-img {
-        width: 100%; border-radius: 6px; border: 1px solid #e0e4ea;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s; cursor: zoom-in;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        border: 1px solid #e0e4ea;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        transition: transform 0.2s ease;
+        cursor: zoom-in;
     }
-    .screenshot-img:hover { transform: scale(1.01); }
-    .screenshot-desc { font-size: 0.82rem; color: #666; margin: 0; }
+
+    .screenshot-img:hover {
+        transform: scale(1.01);
+    }
+
+    .screenshot-desc {
+        font-size: 0.82rem;
+        color: #666;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .screenshot-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .screenshot-img {
+            transition: none;
+        }
+
+        .screenshot-img:hover {
+            transform: none;
+        }
+    }
 </style>
 
 </body>

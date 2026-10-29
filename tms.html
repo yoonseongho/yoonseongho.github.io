@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="운송관리시스템(TMS) 고도화 프로젝트 - 윤성호 개발자 포트폴리오">
     <title>TMS 시스템 | 윤성호 Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
 
@@ -15,29 +17,31 @@
 
 <body>
 
-<div class="project-page">
+<main class="project-page">
 
     <a href="index.html" class="detail-btn">
         ← Portfolio로 돌아가기
     </a>
 
-    <div class="project-header">
+    <header class="project-header">
         <h1>운송관리시스템 (TMS) 고도화</h1>
         <p>2024.01 ~ 2025.01 (1년)</p>
-    </div>
+    </header>
 
-    <!-- 개요 -->
-    <div class="project-section">
+    <!-- 프로젝트 개요 -->
+    <section class="project-section">
         <h2>프로젝트 개요</h2>
         <p>
-            보세·항공·내륙 복합 운송 프로세스를 정밀 통제하는 엔터프라이즈 **TMS 고도화 프로젝트**입니다.
-            운임/선사/차량/기사/샤시 등 물류 핵심 마스터 데이터를 체계화하고, 실시간 배차 모니터링 및 컨테이너 단위 정산·수익성 분석 환경을 구축했습니다.
+            보세·항공·내륙 운송 업무를 지원하는 운송관리시스템(TMS) 고도화 프로젝트입니다.
+            운임, 선사, 차량, 기사, 샤시 등 물류 핵심 마스터 데이터를 체계적으로 관리하고,
+            운송 및 배차 현황 조회와 월간 실적·컨테이너별 손익 분석 기능을 개발했습니다.
         </p>
-    </div>
+    </section>
 
     <!-- 기술 스택 -->
-    <div class="project-section">
+    <section class="project-section">
         <h2>기술 스택</h2>
+
         <div class="tech-stack">
             <span>Java</span>
             <span>Spring Boot</span>
@@ -46,175 +50,321 @@
             <span>MyBatis</span>
             <span>REST API</span>
         </div>
-    </div>
+    </section>
 
-    <!-- 담당 업무 요약 -->
-    <div class="project-section">
+    <!-- 담당 업무 -->
+    <section class="project-section">
         <h2>담당 업무 Summary</h2>
+
         <div class="feature-block">
             <ul>
-                <li><strong>마스터 데이터 구축:</strong> 운임, 선사, 차량(1.4만건), 기사, 샤시 장비 마스터 API 및 관리 화면 개발</li>
-                <li><strong>운송 및 배차 통제:</strong> Location/Depot 거점 관리 및 일자/협력사별 가용차량 실시간 배차 모듈 구현</li>
-                <li><strong>정산 및 분석:</strong> 월간 운송 실적 집계 및 컨테이너별 매출/비용/이익 Pivot 분석 대시보드 구축</li>
-                <li><strong>성능 최적화:</strong> PostgreSQL 대용량 쿼리 튜닝 및 Server-side Pagination 도입</li>
+                <li>
+                    <strong>마스터 데이터 관리:</strong>
+                    운임, 선사, 차량, 기사, 샤시 장비 관련 API 및 관리 화면 개발
+                </li>
+                <li>
+                    <strong>운송 및 배차 관리:</strong>
+                    Location/Depot 거점 관리와 일자·부서·협력사별 가용 차량 조회 기능 구현
+                </li>
+                <li>
+                    <strong>실적 및 손익 분석:</strong>
+                    월간 운송 실적 집계와 컨테이너별 매출·비용·이익 분석 대시보드 개발
+                </li>
+                <li>
+                    <strong>조회 성능 개선:</strong>
+                    PostgreSQL 쿼리 튜닝 및 Server-side Pagination 적용
+                </li>
             </ul>
         </div>
-    </div>
+    </section>
 
     <!-- 주요 기능 -->
-    <div class="project-section">
+    <section class="project-section">
         <h2>주요 기능</h2>
 
         <div class="feature-block">
             <h3>1. 기준정보(Master Data) 통합 관리</h3>
-            <p>보세/항공 운임코드(220여건), 선사/세관코드(920여건) 다차원 파라미터 관리 모듈 개발</p>
+
+            <p>
+                운송 업무에 필요한 운임·선사·세관 코드 및 차량 관련 기준정보를
+                조회하고 관리할 수 있는 기능을 개발했습니다.
+            </p>
+
             <ul>
-                <li>차량(14,722건) 및 기사(5,014건) 프로필의 Server-side Pagination 처리로 조회 속도 개선</li>
-                <li>컨테이너 샤시 장비의 정비 이력 및 다중 검사 주기(사무소/최종/만료일) 연계 추적</li>
-                <li>Location/Depot 거점 매핑 및 COPINO EDI 연계 속성 관리 체계 구축</li>
+                <li>
+                    차량 14,722건 및 기사 5,014건의 데이터를 조회할 수 있도록
+                    Server-side Pagination 적용
+                </li>
+                <li>
+                    보세·항공 운임 코드 약 220건, 선사·세관 코드 약 920건의
+                    기준정보 관리 기능 구현
+                </li>
+                <li>
+                    샤시 장비의 정비 이력과 사무소·최종·만료일 등 검사 관련 정보 관리
+                </li>
+                <li>
+                    Location/Depot 거점 매핑 및 COPINO EDI 연계 속성 관리
+                </li>
             </ul>
         </div>
 
         <div class="feature-block">
-            <h3>2. 실시간 배차 및 월간 실적 분석 대시보드</h3>
-            <p>일자·부서·협력사별 가용 배차 현황 파악 및 월 단위 운송 트랜잭션 실시간 집계</p>
+            <h3>2. 배차 현황 및 월간 실적 분석</h3>
+
+            <p>
+                일자·부서·협력사별 가용 차량 현황을 조회하고,
+                월간 운송 실적과 컨테이너별 매출·비용 데이터를 분석할 수 있는 기능을 개발했습니다.
+            </p>
+
             <ul>
-                <li>운임 항목별 매출(운송료/부가/부대)/비용 분류 및 Pivot 집계 Engine 구현</li>
-                <li>W/O No., CNTR No. 기준 컨테이너 단위 손익(청구 대비 비용) 다차원 밀착 분석</li>
+                <li>
+                    운송료·부가·부대 항목별 매출 및 비용을 분류하는 Pivot 집계 기능 구현
+                </li>
+                <li>
+                    W/O No. 및 CNTR No. 기준 컨테이너별 실적과 손익 조회 기능 개발
+                </li>
+                <li>
+                    청구 금액과 비용을 비교해 운송 건별 수익성을 확인할 수 있는 조회 화면 구성
+                </li>
             </ul>
         </div>
-    </div>
+    </section>
 
     <!-- 주요 화면 -->
-    <div class="project-section">
+    <section class="project-section">
         <h2>주요 화면</h2>
 
         <div class="screenshot-grid">
+
             <div class="screenshot-item">
                 <div class="screenshot-label">운임코드 관리</div>
-                <img src="tms_01.png" alt="운임코드관리" class="screenshot-img">
-                <p class="screenshot-desc">상단 조건 입력 및 하단 220여 건의 운임코드 목록 연계 관리</p>
+                <img src="tms_01.png"
+                     alt="운임코드 관리 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    조회 조건에 따른 운임 코드 목록 조회 및 관리
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">선사코드 관리</div>
-                <img src="tms_02.png" alt="선사코드관리" class="screenshot-img">
-                <p class="screenshot-desc">선사·세관코드·Main VAN사 등 920여 건의 마스터 조회 및 페이징</p>
+                <img src="tms_02.png"
+                     alt="선사코드 관리 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    선사·세관 코드 및 Main VAN사 기준정보 조회와 페이징 처리
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">차량코드 관리</div>
-                <img src="tms_03.png" alt="차량코드관리" class="screenshot-img">
-                <p class="screenshot-desc">기본/추가/FPIS 탭 구조 및 1.4만 건 차량 Server-side 페이징</p>
+                <img src="tms_03.png"
+                     alt="차량코드 관리 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    기본·추가·FPIS 탭 구성 및 차량 마스터 데이터 페이징 조회
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">차량기사 관리</div>
-                <img src="tms_04.png" alt="차량기사관리" class="screenshot-img">
-                <p class="screenshot-desc">5천여 건 기사 프로필 관리 및 모바일 APP 연동 전송 기능</p>
+                <img src="tms_04.png"
+                     alt="차량기사 관리 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    기사 프로필 관리 및 모바일 APP 연동 데이터 전송 기능
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">샤시코드 관리</div>
-                <img src="tms_05.png" alt="샤시코드관리" class="screenshot-img">
-                <p class="screenshot-desc">샤시 장비 상태 및 다중 검사만료일 통합 관리</p>
+                <img src="tms_05.png"
+                     alt="샤시코드 관리 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    샤시 장비 상태 및 검사 관련 일자 정보 관리
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">샤시정비 관리</div>
-                <img src="tms_06.png" alt="샤시정비관리" class="screenshot-img">
-                <p class="screenshot-desc">차량영업번호 연계 샤시 정비 이력 및 비용 추적</p>
+                <img src="tms_06.png"
+                     alt="샤시정비 관리 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    차량 영업번호와 연계한 샤시 정비 이력 및 비용 조회
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">Location / Depot 관리</div>
-                <img src="tms_07.png" alt="Location Depot 관리" class="screenshot-img">
-                <p class="screenshot-desc">좌측 Location - 우측 Depot 연계 및 EDI 통신 설정 관리</p>
+                <img src="tms_07.png"
+                     alt="Location 및 Depot 관리 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    Location과 Depot 거점 매핑 및 EDI 통신 설정 관리
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">월간 실적 조회</div>
-                <img src="tms_08.png" alt="월간실적" class="screenshot-img">
-                <p class="screenshot-desc">월 단위 운송료/부가/부대 항목별 매출·비용 Pivot 집계</p>
+                <img src="tms_08.png"
+                     alt="월간 운송 실적 조회 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    월별 운송료·부가·부대 항목의 매출 및 비용 Pivot 집계
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">컨테이너별 실적</div>
-                <img src="tms_09.png" alt="컨테이너별 실적" class="screenshot-img">
-                <p class="screenshot-desc">I/O 구분, 철송 여부 조건별 컨테이너 실적 현황 조회</p>
+                <img src="tms_09.png"
+                     alt="컨테이너별 운송 실적 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    I/O 구분 및 철송 여부 등 조건별 컨테이너 실적 조회
+                </p>
             </div>
 
             <div class="screenshot-item">
-                <div class="screenshot-label">컨테이너 청구·비용 대비</div>
-                <img src="tms_10.png" alt="컨테이너 청구비용대비" class="screenshot-img">
-                <p class="screenshot-desc">W/O·CNTR 단위 손익 산출 및 청구 대비 비용 다차원 분석</p>
+                <div class="screenshot-label">컨테이너 청구·비용 비교</div>
+                <img src="tms_10.png"
+                     alt="컨테이너별 청구 및 비용 비교 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    W/O 및 CNTR 단위 청구 금액과 비용 비교를 통한 손익 분석
+                </p>
             </div>
 
             <div class="screenshot-item">
                 <div class="screenshot-label">가용차량 관리</div>
-                <img src="tms_11.png" alt="가용차량관리" class="screenshot-img">
-                <p class="screenshot-desc">일자·부서·협력사별 가용 배차 현황 실시간 모니터링</p>
+                <img src="tms_11.png"
+                     alt="가용차량 관리 화면"
+                     class="screenshot-img"
+                     loading="lazy">
+                <p class="screenshot-desc">
+                    일자·부서·협력사별 가용 차량 및 배차 현황 조회
+                </p>
             </div>
+
         </div>
-    </div>
+    </section>
 
     <!-- 트러블 슈팅 -->
-    <div class="project-section">
+    <section class="project-section">
         <h2>트러블 슈팅 (Problem Solving)</h2>
 
         <div class="feature-block">
-            <h3>1. 1.4만건 대용량 차량/기사 데이터 조회 성능 최적화</h3>
+            <h3>1. 대용량 차량·기사 데이터 조회 성능 개선</h3>
+
             <div class="sub-block">
                 <h4>문제 및 원인</h4>
-                <p>다중 JOIN 실행 시 Query Timeout 발생 및 Front-end 그리드 바인딩 과부하</p>
+                <p>
+                    차량 및 기사 데이터를 조회할 때 다중 JOIN으로 인한 쿼리 실행 지연이 발생하고,
+                    조회 결과가 많아지면서 프론트엔드 그리드 렌더링 부담이 커지는 문제가 있었습니다.
+                </p>
             </div>
+
             <div class="sub-block">
                 <h4>해결 방안</h4>
                 <ul>
-                    <li>조회 조건 컬럼 복합 인덱스 생성 및 불필요한 Inline View 리팩토링</li>
-                    <li>PostgreSQL `OFFSET-LIMIT` 기반 Server-side Pagination 도입</li>
+                    <li>
+                        조회 조건에 사용되는 컬럼의 인덱스를 검토하고 복합 인덱스 적용
+                    </li>
+                    <li>
+                        불필요한 Inline View를 정리하고 조회 쿼리 구조 개선
+                    </li>
+                    <li>
+                        PostgreSQL의 LIMIT/OFFSET 기반 Server-side Pagination을 적용해
+                        필요한 데이터만 페이지 단위로 조회하도록 변경
+                    </li>
                 </ul>
             </div>
+
             <div class="sub-block">
                 <h4>결과</h4>
-                <p>초기 데이터 로딩 속도 단축 및 서버 I/O 부하 절감</p>
+                <p>
+                    한 번에 조회하고 화면에 전달하는 데이터 양을 줄여
+                    초기 로딩 부담을 완화하고 대용량 마스터 데이터의 조회 효율을 개선했습니다.
+                </p>
             </div>
         </div>
 
         <div class="feature-block">
-            <h3>2. 월간 실적 집계 소계/합계 불일치 조치</h3>
+            <h3>2. 월간 실적 집계의 소계·합계 불일치 해결</h3>
+
             <div class="sub-block">
                 <h4>문제 및 원인</h4>
-                <p>특정 W/O 조건 연산 시 `NULL` 값 산출 항목 미처리로 집계 수치 오차 발생</p>
+                <p>
+                    특정 W/O 조건에서 일부 금액 항목이 NULL로 계산되면서
+                    Pivot 집계 결과의 소계와 합계가 일치하지 않는 문제가 발생했습니다.
+                </p>
             </div>
+
             <div class="sub-block">
                 <h4>해결 방안</h4>
                 <ul>
-                    <li>SQL 집계 내 `COALESCE` 처리를 통한 NULL 예외 보정</li>
-                    <li>CASE-WHEN Pivot 연산 조건 재설계 및 검증 테스트 케이스 수행</li>
+                    <li>
+                        SQL 집계식에 COALESCE를 적용해 NULL 값에 대한 처리 기준 통일
+                    </li>
+                    <li>
+                        CASE-WHEN 기반 Pivot 연산 조건을 점검하고 집계 로직 개선
+                    </li>
+                    <li>
+                        다양한 W/O 조건과 금액 조합을 기준으로 검증 테스트 수행
+                    </li>
                 </ul>
             </div>
+
             <div class="sub-block">
                 <h4>결과</h4>
-                <p>실적 및 컨테이너 분석 데이터 집계 정확도 100% 확보</p>
+                <p>
+                    NULL 값으로 인해 발생하던 집계 오차를 해결하고,
+                    월간 운송 실적 및 컨테이너별 손익 데이터의 일관성을 개선했습니다.
+                </p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- 프로젝트 성과 -->
-    <div class="project-section">
+    <section class="project-section">
         <h2>프로젝트 성과</h2>
+
         <div class="feature-block">
             <ul>
-                <li><strong>데이터 정합성 확보:</strong> 운임·선사·차량·샤시 등 핵심 마스터 코드 단일화로 운송 정보 오류 최소화</li>
-                <li><strong>대용량 처리 최적화:</strong> 1.4만 건의 차량 마스터 페이징 및 PostgreSQL 쿼리 튜닝으로 응답 성능 개선</li>
-                <li><strong>정산 자동화 지원:</strong> 컨테이너 손익(청구 대비 비용) 분석 대시보드로 정산 업무 효율성 극대화</li>
-                <li><strong>전문 도메인 역량:</strong> 보세운송, 샤시 정비, COPINO EDI 등 복잡한 운송/물류 전문 지식 확보</li>
+                <li>
+                    <strong>기준정보 관리 체계화:</strong>
+                    운임·선사·차량·샤시 등 주요 마스터 데이터를 통합적으로 조회하고 관리할 수 있는 기능 개발
+                </li>
+                <li>
+                    <strong>대용량 조회 성능 개선:</strong>
+                    차량 약 1.4만 건 및 기사 약 5천 건의 데이터를 대상으로
+                    쿼리 튜닝과 Server-side Pagination 적용
+                </li>
+                <li>
+                    <strong>실적 분석 지원:</strong>
+                    월간 운송 실적 및 컨테이너별 청구·비용 비교 기능을 통해
+                    정산 및 수익성 분석 업무 지원
+                </li>
+                <li>
+                    <strong>물류 도메인 이해:</strong>
+                    보세·항공 운송, 샤시 정비, Location/Depot 관리 및 COPINO EDI 연계 업무 경험
+                </li>
             </ul>
         </div>
-    </div>
+    </section>
 
-</div>
+</main>
 
 <style>
     .feature-block {
@@ -224,32 +374,113 @@
         background: #f8faff;
         border-radius: 0 8px 8px 0;
     }
-    .feature-block h3 { margin: 0 0 0.5rem 0; font-size: 1.05rem; }
-    .feature-block > p { margin: 0 0 0.5rem 0; color: #444; font-size: 0.95rem; }
-    .feature-block ul { margin: 0; padding-left: 1.2rem; }
-    .sub-block { margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px dashed #dde6f5; }
-    .sub-block:first-of-type { border-top: none; padding-top: 0; }
-    .sub-block h4 { margin: 0 0 0.25rem 0; font-size: 0.85rem; color: #4a7fd4; text-transform: uppercase; }
-    .sub-block p { margin: 0; font-size: 0.9rem; color: #555; }
+
+    .feature-block h3 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.05rem;
+    }
+
+    .feature-block > p {
+        margin: 0 0 0.5rem 0;
+        color: #444;
+        font-size: 0.95rem;
+    }
+
+    .feature-block ul {
+        margin: 0;
+        padding-left: 1.2rem;
+    }
+
+    .feature-block li {
+        margin-bottom: 0.35rem;
+        line-height: 1.65;
+    }
+
+    .sub-block {
+        margin-top: 0.75rem;
+        padding-top: 0.5rem;
+        border-top: 1px dashed #dde6f5;
+    }
+
+    .sub-block:first-of-type {
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .sub-block h4 {
+        margin: 0 0 0.25rem 0;
+        font-size: 0.85rem;
+        color: #4a7fd4;
+    }
+
+    .sub-block p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #555;
+        line-height: 1.7;
+    }
 
     .screenshot-grid {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 1.5rem;
         margin-top: 1.25rem;
     }
-    @media (max-width: 768px) { .screenshot-grid { grid-template-columns: 1fr; } }
-    .screenshot-item { display: flex; flex-direction: column; gap: 0.5rem; }
+
+    .screenshot-item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        min-width: 0;
+    }
+
     .screenshot-label {
-        font-size: 0.75rem; font-weight: 600; color: #fff; background: #4a7fd4;
-        border-radius: 4px; padding: 2px 8px; align-self: flex-start;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: #fff;
+        background: #4a7fd4;
+        border-radius: 4px;
+        padding: 2px 8px;
+        align-self: flex-start;
     }
+
     .screenshot-img {
-        width: 100%; border-radius: 6px; border: 1px solid #e0e4ea;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06); transition: transform 0.2s; cursor: zoom-in;
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        border: 1px solid #e0e4ea;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        transition: transform 0.2s ease;
+        cursor: zoom-in;
     }
-    .screenshot-img:hover { transform: scale(1.01); }
-    .screenshot-desc { font-size: 0.82rem; color: #666; margin: 0; }
+
+    .screenshot-img:hover {
+        transform: scale(1.01);
+    }
+
+    .screenshot-desc {
+        font-size: 0.82rem;
+        color: #666;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    @media (max-width: 768px) {
+        .screenshot-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .screenshot-img {
+            transition: none;
+        }
+
+        .screenshot-img:hover {
+            transform: none;
+        }
+    }
 </style>
 
 </body>
